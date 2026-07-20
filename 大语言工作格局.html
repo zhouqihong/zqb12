@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>强国建设 语言何为——大语言工作格局及其政策着力点</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8edf3 100%);
+    padding: 20px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .hero {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #c31432 100%);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 0%, transparent 50%);
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+    font-weight: 300;
+    position: relative;
+  }
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    position: relative;
+  }
+  .hero-divider {
+    width: 100px;
+    height: 4px;
+    background: #ffd700;
+    margin: 20px auto;
+    border-radius: 2px;
+    position: relative;
+  }
+  .hero-author {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    opacity: 0.95;
+    position: relative;
+  }
+  .hero-event {
+    font-size: 0.95rem;
+    margin-top: 15px;
+    opacity: 0.85;
+    position: relative;
+  }
+  .toc {
+    background: #f8f9fa;
+    padding: 30px 40px;
+    border-bottom: 2px solid #e9ecef;
+  }
+  .toc h2 {
+    color: #1e3c72;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  /* 子页面顶部导航 */
+  .subpage-topbar {
+    background: #fff;
+    border-bottom: 1px solid #e9ecef;
+    padding: 14px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .subpage-topbar .back-home {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 6px 14px;
+    border-radius: 6px;
+    background: #f0f4f9;
+    transition: all 0.3s;
+  }
+  .subpage-topbar .back-home:hover {
+    background: #1e3c72;
+    color: #fff;
+    transform: translateX(-3px);
+  }
+  .subpage-topbar .topbar-tip {
+    color: #6c757d;
+    font-size: 0.85rem;
+  }
+  .toc ol {
+    columns: 2;
+    column-gap: 40px;
+  }
+  .toc li {
+    padding: 8px 0;
+    color: #495057;
+    break-inside: avoid;
+  }
+  .toc a {
+    color: #495057;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .toc a:hover {
+    color: #c31432;
+  }
+  .section {
+    padding: 50px 40px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #1e3c72;
+  }
+  .section-num {
+    background: linear-gradient(135deg, #1e3c72, #c31432);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+    box-shadow: 0 4px 15px rgba(30,60,114,0.3);
+  }
+  .section-title {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    font-weight: bold;
+  }
+  .section-subtitle {
+    color: #c31432;
+    font-size: 1.1rem;
+    margin-left: 15px;
+  }
+  h3 {
+    color: #1e3c72;
+    font-size: 1.3rem;
+    margin: 25px 0 15px;
+    padding-left: 15px;
+    border-left: 4px solid #c31432;
+  }
+  h4 {
+    color: #495057;
+    font-size: 1.1rem;
+    margin: 20px 0 10px;
+  }
+  p {
+    margin: 12px 0;
+    text-align: justify;
+  }
+  .highlight-red {
+    color: #c31432;
+    font-weight: bold;
+  }
+  .highlight-blue {
+    color: #1e3c72;
+    font-weight: bold;
+  }
+  .highlight-gold {
+    color: #d4a017;
+    font-weight: bold;
+  }
+  .framework-box {
+    background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 25px 0;
+    border-left: 5px solid #1e3c72;
+  }
+  .three-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 25px 0;
+  }
+  .pillar {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid;
+  }
+  .pillar:nth-child(1) { border-color: #e91e63; }
+  .pillar:nth-child(2) { border-color: #00bcd4; }
+  .pillar:nth-child(3) { border-color: #3f51b5; }
+  .pillar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+  .pillar-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  .pillar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e3c72;
+    margin-bottom: 10px;
+  }
+  .pillar-content {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  .quote-box {
+    background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+    border-left: 5px solid #d4a017;
+    padding: 20px 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-style: italic;
+    position: relative;
+  }
+  .quote-box::before {
+    content: """";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 4rem;
+    color: #d4a017;
+    opacity: 0.3;
+  }
+  .case-box {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 3px solid #c31432;
+  }
+  .case-title {
+    color: #c31432;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+  }
+  .list-item {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 3px solid #1e3c72;
+  }
+  .list-item strong {
+    color: #1e3c72;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .full-list {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+  .full-list ol {
+    padding-left: 25px;
+  }
+  .full-list ol li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #e9ecef;
+  }
+  .full-list ol li:last-child {
+    border-bottom: none;
+  }
+  .strategy-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 20px 0;
+  }
+  .strategy-card h4 {
+    color: #ffd700;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  .formula {
+    background: #1e3c72;
+    color: #ffd700;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 25px 0;
+    box-shadow: 0 4px 15px rgba(30,60,114,0.3);
+  }
+  .info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+  .info-table th {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .info-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  .info-table tr:last-child td {
+    border-bottom: none;
+  }
+  .info-table tr:nth-child(even) {
+    background: #f8f9fa;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+  }
+  .project-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-top: 3px solid #c31432;
+  }
+  .project-num {
+    display: inline-block;
+    background: #c31432;
+    color: white;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .project-title {
+    font-weight: bold;
+    color: #1e3c72;
+    margin-bottom: 5px;
+  }
+  .project-desc {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .conclusion-box {
+    background: linear-gradient(135deg, #c31432 0%, #1e3c72 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 30px 0;
+  }
+  .conclusion-box h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .conclusion-box p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  .case-study {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  .case-study h4 {
+    color: #c31432;
+    margin-bottom: 10px;
+  }
+  .stat-card {
+    display: inline-block;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 3px solid #d4a017;
+  }
+  .stat-card strong {
+    color: #c31432;
+    font-size: 1.2rem;
+  }
+  .closing-quote {
+    text-align: center;
+    padding: 50px 40px;
+    background: linear-gradient(135deg, #1e3c72 0%, #c31432 100%);
+    color: white;
+    border-radius: 12px;
+    margin: 30px 0;
+  }
+  .closing-quote .big-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin: 20px 0;
+  }
+  .closing-quote p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    opacity: 0.95;
+  }
+  @media (max-width: 768px) {
+    .hero-title { font-size: 2rem; }
+    .three-pillars, .list-grid { grid-template-columns: 1fr; }
+    .section { padding: 30px 20px; }
+    .toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-subtitle">强国建设 · 语言何为</div>
+    <h1 class="hero-title">大语言工作格局<br>及其政策着力点</h1>
+    <div class="hero-divider"></div>
+    <div class="hero-author">主讲：P.Liu@126.com</div>
+    <div class="hero-event">中青年学者研修班 · 福建·厦门 · 2026年7月</div>
+  </div>
+
+  <!-- 返回主页导航 -->
+  <div class="subpage-topbar">
+    <a href="index.html" class="back-home">← 返回主页</a>
+    <span class="topbar-tip">当前位置：第1天 · 大语言工作格局专题</span>
+  </div>
+
+  <!-- Table of Contents -->
+  <div class="toc">
+    <h2>📑 内容目录</h2>
+    <ol>
+      <li><a href="#intro">序言：从"案例"看"格局"——站上新起点</a></li>
+      <li><a href="#part1">第1部分：为什么建格局？——语言战略需求</a></li>
+      <li><a href="#part2">第2部分：建成什么格局？——语言治理供给</a></li>
+      <li><a href="#part3">第3部分：怎样构建格局？——语言发展政策</a></li>
+      <li><a href="#strategy">战略思考：五个"率"的宏观设计</a></li>
+      <li><a href="#conclusion">结语：从"思考"到"行动"——找到着力点</a></li>
+    </ol>
+  </div>
+
+  <!-- Introduction Section -->
+  <div class="section" id="intro">
+    <div class="section-header">
+      <div class="section-num">序</div>
+      <div>
+        <div class="section-title">从"案例"看"格局"</div>
+        <div class="section-subtitle">——站上新起点</div>
+      </div>
+    </div>
+
+    <p>从世界人工智能大会（2026年7月17-20日，上海）上习近平总书记提出的"4点意见"出发，结合中缅英互译系统用于国际地震救援的实践案例，本报告聚焦：</p>
+    
+    <div class="quote-box">
+      "转变观念，守正创新，奋力开创语言文字事业高质量发展新局面"——2026年2月28日重要指示
+    </div>
+
+    <h3>🔍 案例分析：中国大语言模型首次用于地震救援</h3>
+    <div class="case-study">
+      <h4>📌 DeepSeek 7小时攻克缅甸地震救灾语言关</h4>
+      <p><strong>国内发布：</strong>中央广播电视总台相关话题登上微博、百度等多平台热搜榜，话题词阅读量超1亿。</p>
+      <p><strong>国际转发：</strong>路透社、马来西亚国家通讯社、印尼安塔拉通讯社、土耳其阿纳多卢通讯社、今日土耳其、越南先锋报等国际媒体转引。</p>
+      <p><strong>热点-交汇点：</strong>在全球展现了中国科技的硬实力、大国援助的真担当，让世界看到了"技术为人""智能向善""语言赋能"的力量。</p>
+      <p><strong>关键点：</strong>新语料+大模型；平战结合；部门支持；高校担当；语言赋能</p>
+    </div>
+
+    <h3>🚀 案例拓展与战略储备："中国—东盟语料库"</h3>
+    <div class="list-grid">
+      <div class="list-item">
+        <strong>核心功能</strong>
+        文化交流，商贸洽谈，民间交往，科研合作
+      </div>
+      <div class="list-item">
+        <strong>机制创新</strong>
+        应急—平时，救灾—联演，撤侨—协作，政府—民间
+      </div>
+      <div class="list-item">
+        <strong>覆盖范围</strong>
+        一带一路，周边国家，DX国
+      </div>
+      <div class="list-item">
+        <strong>建设路径</strong>
+        国际化采集语料，高质量发展+高水平安全，中国民族语料库
+      </div>
+    </div>
+
+    <h3>📊 创新项目与案例征集</h3>
+    <p><strong>国家关键领域语言科技赋能创新项目案例 100项（2025年）</strong></p>
+    <p>参与单位：北京大学、上海交大、哈工大、抖音、科大讯飞、浦江鹏程国家实验室、国家心理健康、高教社、中国社科院、国家图书馆、国家博物馆、教育部、卫健委、科技部等部委直属事业单位。</p>
+    <p>部分典型项目：</p>
+    <div class="project-grid">
+      <div class="project-item">
+        <span class="project-num">5</span>
+        <div class="project-title">庞中华典籍活化利用与文化传承</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">6</span>
+        <div class="project-title">"首师优字"创新实践：AI赋能标准化与个性化的中小学规范汉字书写教育</div>
+        <div class="project-desc">首都师范大学等</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">7</span>
+        <div class="project-title">BISU语魔方：人工智能赋能个性化多语种教育教学创新</div>
+        <div class="project-desc">北京第二外国语学院等</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">8</span>
+        <div class="project-title">跨校文工交叉联合学位集群：语言赋能工程领域复合型人才培养创新实践</div>
+        <div class="project-desc">北京语言大学</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">9</span>
+        <div class="project-title">中缅英互译系统：国产大语言模型赋能国际地震救援创新实践</div>
+        <div class="project-desc">北京语言大学等</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">10</span>
+        <div class="project-title">银发记忆工程：老年口述史AI智能采集与规范加工系统</div>
+        <div class="project-desc">中国传媒大学</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Part 1 -->
+  <div class="section" id="part1">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <div>
+        <div class="section-title">为什么建格局？</div>
+        <div class="section-subtitle">——语言战略需求</div>
+      </div>
+    </div>
+
+    <h3>一、当前政治任务</h3>
+    <p>完整、准确、全面学习贯彻关于语言文字重要指示批示精神（摘编）：</p>
+    <div class="full-list">
+      <ol>
+        <li><strong>语言</strong>是人类交流思想的工具，传承文明的载体，增进理解的桥梁。（2024）</li>
+        <li><strong>中文</strong>承载着中华民族数千年的文明智慧，是中国贡献给世界的重要公共文化产品。支持服务国际社会开展好中文教育是中国作为母语国的责任。（2024）</li>
+        <li><strong>中国字</strong>是中国文化传承的标志。（2014）</li>
+        <li><strong>中国的汉文字</strong>非常了不起，中华民族的形成和发展离不开汉文字的维系。（2022）</li>
+        <li>一个国家文化的魅力、一个民族的凝聚力主要通过<strong>语言</strong>表达和传递。（2014）</li>
+        <li><strong>甲骨文</strong>是迄今为止中国发现的年代最早的成熟文字系统，是汉字的源头和中华优秀传统文化的根脉，值得倍加珍视、更好传承发展。（2019）</li>
+        <li>殷墟甲骨文距今3000多年，3000多年来汉字结构没有变，这种传承是真正的<strong>中华基因</strong>。（2014）</li>
+        <li>推广普及<strong>国家通用语言文字</strong>，科学保护<strong>各民族语言文字</strong>，尊重和保障少数民族语言文字学习使用。（2021）</li>
+        <li><strong>全面推广普及国家通用语言文字，全面推行使用国家统编教材</strong>，以语言相通促进心灵相通、命运相通。（2023）</li>
+        <li>用<strong>陕北方言</strong>向乡亲们介绍说："这是我的婆姨（陕北方言，意为妻子）"。（2015）</li>
+      </ol>
+    </div>
+
+    <h3>二、全球机遇挑战（三期叠加）</h3>
+    <div class="framework-box">
+      <h4>🔺 三大历史机遇</h4>
+      <div class="three-pillars">
+        <div class="pillar" style="border-color: #e91e63;">
+          <div class="pillar-icon">🚀</div>
+          <div class="pillar-title">科技创新涌现期</div>
+          <div class="pillar-content">从人类科技革命看，需要语言成为数字中国的新基建</div>
+        </div>
+        <div class="pillar" style="border-color: #00bcd4;">
+          <div class="pillar-icon">🌍</div>
+          <div class="pillar-title">中国发展关键期</div>
+          <div class="pillar-content">从中国发展战略看，需要语言成为强国建设的新支点</div>
+        </div>
+        <div class="pillar" style="border-color: #3f51b5;">
+          <div class="pillar-icon">⚖️</div>
+          <div class="pillar-title">世界安全敏感期</div>
+          <div class="pillar-content">从世界语言格局看，需要语言成为综合国力的新能源</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>📊 当今世界语言格局</h3>
+    <p><strong>语言资源大国 → 语言能力强国</strong></p>
+    <div class="list-grid">
+      <div class="list-item">
+        <strong>世界语言概况</strong>
+        世界上约有6700种语言，97%人口使用的语言仅占语言种类的4%，96%的语言仅有3%的人在使用，每2周消失1种（数据来源：UNESCO）
+      </div>
+      <div class="list-item">
+        <strong>中文的世界地位</strong>
+        世界上使用人数最多的语言之一，14/80=17%，普通话普及率85-90%，境外使用目标2-3亿人
+      </div>
+      <div class="list-item">
+        <strong>中国语言资源</strong>
+        五大语系，130多种语言，十大汉语方言，难以计数的方言土语
+      </div>
+      <div class="list-item">
+        <strong>建构目标</strong>
+        建构中国大语言格局：强国建设——服务国家事业发展大局，服务国内国际两个大局——必须增强大局意识
+      </div>
+    </div>
+
+    <h3>🌐 从世界语言格局看——主权挑战清单10</h3>
+    <div class="full-list">
+      <ol>
+        <li><strong>语言版图</strong>：世界语言地图划分（UNESCO），语言关系民族政策国家主权</li>
+        <li><strong>标准主导</strong>：国际语言标准制定（ISO），少数民族语言标准</li>
+        <li><strong>战略规划</strong>：国家战略语言规划（US India UK）</li>
+        <li><strong>语言占比</strong>：语言占比价值争夺（UNI/6），全球数字空间，世界现实生活</li>
+        <li><strong>边界争夺</strong>：语言边界你进我退（LIANG AN），语教台独</li>
+        <li><strong>模型竞争</strong>：各国人工智能竞争（EU LLM），大语言模型，青少年素养（K12）</li>
+        <li><strong>智能导向</strong>：自然人机器人智能（Corpus），智能体价值导向</li>
+        <li><strong>关键语料</strong>：跨境采集战略语料（US Dongmeng）</li>
+        <li><strong>语言反制</strong>：语言成为战略工具（CECC）</li>
+        <li><strong>认知渗透</strong>：语言认知相互渗透（术语、翻译）</li>
+      </ol>
+    </div>
+
+    <h3>🔒 安全风险清单10</h3>
+    <div class="full-list">
+      <ol>
+        <li>边境普及不够：共同体意识，边境安全</li>
+        <li>中文竞争压力：推广遇阻，750,580</li>
+        <li>民族语言被染：蒙古、韩国、维语翻译</li>
+        <li>外语语种不全：语言人才不够，101-310</li>
+        <li>语言科技不强：关键语料短缺，国防13种</li>
+        <li>语言学科不强：人从哪里来，人到哪里去</li>
+        <li>语言文化不强：黑话烂梗，影响价值观，认知引领不强</li>
+        <li>语言功能受限：价值释放有限，全局赋能不够；四性六资源</li>
+        <li>事业发展局面：发展指标只有普通话普及率，已经85%；大语言格局</li>
+        <li>治理体系弱化：地方语委、部门委员、高校语委，军地协同；语言国情力不清，各类语种资源不明，世界趋势监测研判不准；知自知彼不够</li>
+      </ol>
+    </div>
+
+    <h3>📈 发展需求清单10</h3>
+    <p><strong class="highlight-red">强国建设，语言何为？</strong>——中国从大到强，走向世界舞台中央，将强未强，强国建设需要语言强起来：</p>
+    <div class="full-list">
+      <ol>
+        <li>深入推进高水平<strong>对外开放</strong>，需要语言人才，语言信息</li>
+        <li>高质量推进<strong>一带一路</strong>，语言认知，沟通交流</li>
+        <li><strong>贸易服务</strong>，语言作为服务贸易（三中出海）</li>
+        <li><strong>教科文卫合作</strong>，UNESCO、WHO，议题设置、决策参与、主导发展</li>
+        <li><strong>大国外交</strong>，人员素质，区域国别，外交不利-驻埃使馆</li>
+        <li><strong>新质生产力</strong>，人工智能，技术革命-产业变革，AI+行动</li>
+        <li><strong>新域战斗力</strong>，语言新装备，翻译战斗力</li>
+        <li><strong>经略周边</strong>，东盟，国际影响力，国家软实力</li>
+        <li><strong>科技发展</strong>，语言科技，自然语言处理技术，知识图谱，大语言模型</li>
+        <li><strong>认知引领</strong>，文化主导力，国际影响力</li>
+      </ol>
+    </div>
+
+    <h3>🏛️ 三、国家规划布局</h3>
+    <p><strong>展望10年战略，规划5年发展，行动3年起步</strong></p>
+    <div class="strategy-card">
+      <h4>🎯 国家语言文字事业"三步走"战略</h4>
+      <p>📚 <strong>教育强国建设规划纲要</strong>（2024-2035）</p>
+      <p>📋 <strong>教育发展"十五五"规划</strong>（2026-2030）</p>
+      <p>⚡ <strong>教育强国建设三年行动计划</strong>（2024-2027）</p>
+    </div>
+
+    <h4>1. 中共中央 国务院《教育强国建设规划纲要（2024-2035年）》专章规定语言文字</h4>
+    <p>实施立德树人工程+十件大事+N-行动计划-改革试点：</p>
+    <ol>
+      <li>实施国家通用语言文字普及攻坚和质量提升行动</li>
+      <li>提高全民语言文化素养</li>
+      <li>健全语言文字规范标准体系</li>
+      <li>建设新型国家语料库</li>
+      <li>开展语言国情国力调查</li>
+      <li>强化语言能力建设</li>
+      <li>加强网络空间语言文字规范引导</li>
+      <li>深入实施国家语言文化传承发展系列工程</li>
+      <li>加强与港澳台语言文化交流</li>
+      <li>语言能力（……）</li>
+    </ol>
+
+    <h4>2. 国务院关于印发《教育发展"十五五"规划》，系统部署语言文字规划</h4>
+    <p>落实战略任务+10项任务：</p>
+    <p>塑造立德树人新格局：1.加强国家语言能力和服务体系建设 2.着力提升学生能力素养 3.推进校园文化建设，深入实施青少年学生读书行动 4.深入推进国家通用语言文字普及攻坚和质量提升行动 5.建设中华优秀语言文化传承发展体系，提升青少年语言文化素养 6.大力培育战略人才，推进新一轮"双一流"建设 7.开展"学前儿童学会普通话"行动，深入实施"童语同音"计划 8.扩大高水平教育对外开放 9.做强国际中文教育品牌 10.加强数字中文建设，推进新型国家语料库建设和应用。实施国家关键领域语言科技赋能计划。</p>
+  </div>
+
+  <!-- Part 2 -->
+  <div class="section" id="part2">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <div>
+        <div class="section-title">建成什么格局？</div>
+        <div class="section-subtitle">——语言治理供给</div>
+      </div>
+    </div>
+
+    <h3>🎯 中国特色大语言工作格局——"三位一体"、"多元支撑"</h3>
+    <div class="formula">
+      语言教育+主体基础 | 语言服务+前沿赋能 | 语言能力+战略支撑
+    </div>
+
+    <div class="framework-box">
+      <h4>🏛️ 编制国家语言文字事业"十五五"发展规划和国家语言文字科研"十五五"创新行动计划</h4>
+      <p><strong>设计好大语言格局，融入到国家大局</strong></p>
+      
+      <h4>📐 大语言工作格局——"三位一体"（教育、服务、能力）</h4>
+      <p>服务党和国家事业发展大局：</p>
+      
+      <table class="info-table">
+        <tr>
+          <th>体系</th>
+          <th>核心结构</th>
+          <th>关键内容</th>
+        </tr>
+        <tr>
+          <td><strong>国家语言教育体系</strong> (3+1)</td>
+          <td>国家通用语言文字推广普及 + 中华优秀语言文化传承发展 + 中国特色语言文明交流互鉴 + 语言人才培养</td>
+          <td>学科、专业</td>
+        </tr>
+        <tr>
+          <td><strong>国家语言服务体系</strong> (4+8)</td>
+          <td>标准化、信息化、专业化、规范化（4化）<br>教育发展、科技自强、文化传承、产业升级、社会民生、公共服务、国防建设、大国外交（8柱）</td>
+          <td>赋能覆盖</td>
+        </tr>
+        <tr>
+          <td><strong>国家语言能力体系</strong> (1+5)</td>
+          <td>1+5：语言能力强国<br>统筹治理能力、人才培养能力、科技支撑能力、文化引领能力、服务保障能力</td>
+          <td>战略支撑</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3>💡 关于构建大语言工作格局的宏观思考</h3>
+    
+    <div class="strategy-card">
+      <h4>一、树立大语言观念（知晓率）</h4>
+      <p>语言，人类交流思想的格局，传承文明的载体，增进理解的桥梁；一个国家文化的魅力、一个民族的凝聚力，主要通过语言表达和传递。语言—言&行，即是资源，也是思维，更是行动：大语言表态，大力度行动（言必信行必果）——既要"做"的好，又要"说"的好。</p>
+      <p><strong>治理体系：</strong>话语体系，理论，政策，组织，运行</p>
+    </div>
+
+    <div class="list-grid">
+      <div class="list-item">
+        <strong>1. 资源</strong>
+        六大资源：发挥语言资源功能作用，释放语言数据要素价值，聚焦"关键领域"着力"全局赋能"
+      </div>
+      <div class="list-item">
+        <strong>2. 思维</strong>
+        自然人智力思维，机器人智能思维；工作思维认知框架——
+      </div>
+      <div class="list-item">
+        <strong>深入语言文字</strong>
+        从本质、属性和规律上研究；认知边界，六大资源功能，从教育起步，以人为本，转化—服务—能力
+      </div>
+      <div class="list-item">
+        <strong>跳出语言文字</strong>
+        从政治、战略和大局上审视；强国—强语：全球+国家，客观结合点，服务发力点，能力支撑点
+      </div>
+      <div class="list-item">
+        <strong>掌控语言文字</strong>
+        从教育、文化和科技上转化；普及应用—卡嗓子、智力语言—卡脑子、技术创新卡脖子；双向赋能
+      </div>
+      <div class="list-item">
+        <strong>开发语言文字</strong>
+        从资源、数据和资产上着力；工具—要素，经济社会发展，高价值领域；赋能项目
+      </div>
+      <div class="list-item">
+        <strong>扎根语言文字</strong>
+        从使命、职责和岗位上行动；学术研究，决策支持，战略谋划；三型人才
+      </div>
+    </div>
+
+    <h3>🏗️ 五个"率"的战略设计</h3>
+    <table class="info-table">
+      <tr>
+        <th>维度</th>
+        <th>核心指标</th>
+        <th>关键路径</th>
+      </tr>
+      <tr>
+        <td><strong>二、善用大语言模型（普及率）</strong></td>
+        <td>1+1+1</td>
+        <td>通用、垂域、专属；制高点，新基建；语料库、大模型、智能体</td>
+      </tr>
+      <tr>
+        <td><strong>三、创新大语言教育（普及率）</strong></td>
+        <td>3+1</td>
+        <td>文字、文化、文明 + 语言人才</td>
+      </tr>
+      <tr>
+        <td><strong>四、构建大语言服务（覆盖率）</strong></td>
+        <td>4+8</td>
+        <td>四梁八柱，泛在性资源—高价值赋能；需求+供给；赋能机制——长三角，京津冀，粤港澳；语言密集型行业：技术、项目、产品、企业、产业、职业——事业—教科文</td>
+      </tr>
+      <tr>
+        <td><strong>五、实施大语言战略（适配率）</strong></td>
+        <td>1+5</td>
+        <td>主权、安全、发展；国家治理+全球治理；国内大局+国际大局；民族共同体+命运共同体</td>
+      </tr>
+    </table>
+
+    <h3>🌐 中国特色大语言工作格局——服务国家发展大局</h3>
+    <div class="quote-box">
+      <strong>大语言观念 · 大语言模型 · 大语言教育 · 大语言服务 · 大语言战略</strong><br>
+      语言是交流思想的工具，传承文明的载体，增进理解的桥梁<br>
+      一个国家文化的魅力、一个民族的凝聚力，主要通过语言表达和传递
+    </div>
+
+    <div class="list-grid">
+      <div class="list-item">
+        <strong>使命/责任/紧迫感</strong>
+        新质生产力、新质战斗力、人才支撑力、科技竞争力、文化软实力、认知引领力；卡脖子、卡嗓子、卡脑子
+      </div>
+      <div class="list-item">
+        <strong>人的全面发展</strong>
+        语言教育（学校）
+      </div>
+      <div class="list-item">
+        <strong>经济社会发展</strong>
+        语言服务（企业）
+      </div>
+      <div class="list-item">
+        <strong>国家安全发展</strong>
+        语言能力（部门）
+      </div>
+    </div>
+
+    <h3>📊 大语言格局的多维构成</h3>
+    <ol>
+      <li><strong>目标：</strong>多目标，政治任务，强国建设，语言何为？强语强国，两个大局，两个治理-内政国防外交—两个共同体</li>
+      <li><strong>语种：</strong>多语种，国家通用语，方言，外语，少数民族语言，盲文手语</li>
+      <li><strong>任务：</strong>多任务，教育、服务、能力；多指标——文字、文化、文明，<strong>5率</strong>：普及率、覆盖率、适配率、占比、占有率</li>
+      <li><strong>体制：</strong>多主体，党政军民学（国家语委30个部门，30个省份，30个基地，3000多高校，50万学校）</li>
+      <li><strong>资源：</strong>多形态，人才、技术、信息、项目、政策、经费（六类资源-六个转化）</li>
+    </ol>
+
+    <div class="quote-box">
+      <strong>大语言，大在哪里？五多；大—强……</strong><br>
+      <strong>强在哪里？五力</strong>
+    </div>
+  </div>
+
+  <!-- Part 3 -->
+  <div class="section" id="part3">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <div>
+        <div class="section-title">怎样构建格局？</div>
+        <div class="section-subtitle">——语言发展政策（五个文件，七个工程，九个项目）</div>
+      </div>
+    </div>
+
+    <h3>🎯 中国语言治理体系框架：13579+2</h3>
+    <div class="formula">
+      一个目标 2035 | 三位一体 2030 | 五类文件 2026 | 七个工程 2025 | 九个项目 2024 | 2大品牌 | 1个IP
+    </div>
+
+    <table class="info-table">
+      <tr>
+        <th>层级</th>
+        <th>具体内容</th>
+      </tr>
+      <tr>
+        <td><strong>一个目标 2035</strong></td>
+        <td>强语强国，大国-强国，语言资源大国 → 语言能力强国</td>
+      </tr>
+      <tr>
+        <td><strong>三位一体 2030</strong></td>
+        <td>1语言教育 + 2语言服务 + 3语言能力</td>
+      </tr>
+      <tr>
+        <td><strong>五类文件 2026</strong></td>
+        <td>1语言教育，2语言科技，3语言文化，4语言服务，5语言能力（<strong>五率</strong>）</td>
+      </tr>
+      <tr>
+        <td><strong>七个工程 2025</strong></td>
+        <td>1古文字，2语保，3术语，4阅读，5传播，6数字中文，7国家语言能力提升工程</td>
+      </tr>
+      <tr>
+        <td><strong>九个项目 2024</strong></td>
+        <td>教育（1三大素养，2视频课程，3海外进修，4青年培养，5语言科学专业）；服务（6赋能，7科研领航，8语料共享，9科研体系）</td>
+      </tr>
+      <tr>
+        <td><strong>2大品牌</strong></td>
+        <td>中国语言科学大会，中国语言能力展示</td>
+      </tr>
+      <tr>
+        <td><strong>1个IP</strong></td>
+        <td>中国语言科学发展报告——<strong>语言的行动+行动的语言</strong>：大—强</td>
+      </tr>
+    </table>
+
+    <h3>📜 一、五类政策文件</h3>
+    <p>三个五年规划：教育事业、语言文字事业、语言文字科学研究</p>
+    
+    <div class="project-grid">
+      <div class="project-item" style="border-top-color: #e91e63;">
+        <div class="project-title">1. 语言教育（普及率）</div>
+        <div class="project-desc">
+          • 教育部印发《中国青少年阅读素养框架》教育行业标准<br>
+          • 青少年素养标准：语言文化，大语言模型<br>
+          • 教育部《关于开展语言科学专业建设试点的通知》
+        </div>
+      </div>
+      <div class="project-item" style="border-top-color: #00bcd4;">
+        <div class="project-title">2. 语言文化</div>
+        <div class="project-desc">
+          教育部、中央宣传部等七部门关于深入推进中华优秀语言文化传承发展、提高全民语言文化素养的意见
+        </div>
+      </div>
+      <div class="project-item" style="border-top-color: #3f51b5;">
+        <div class="project-title">3. 语言科技</div>
+        <div class="project-desc">
+          教育部、国家语委、中央网信办《关于加强数字中文建设 推进语言文字信息化发展的意见》
+        </div>
+      </div>
+      <div class="project-item" style="border-top-color: #ff9800;">
+        <div class="project-title">4. 语言服务（覆盖率）</div>
+        <div class="project-desc">
+          • 教育部、国家语委《关于征集国家关键领域语言科技赋能创新项目案例的通知》<br>
+          • 教育部等部门关于实施国家关键领域语言科技赋能领航计划的通知<br>
+          • 机器合成普通话测试标准——人工智能 语料库 术语规范（2026）<br>
+          • 《国家语言文字科研规划项目管理办法》《国家语言文字科研机构管理办法》十五五规划
+        </div>
+      </div>
+      <div class="project-item" style="border-top-color: #9c27b0;">
+        <div class="project-title">5. 语言能力（适配率）</div>
+        <div class="project-desc">
+          • 中央有关部门等联合研制《国家语言能力提升行动计划》<br>
+          • 教育部、国家语委印发《关于进一步加强语言文字国际交流合作的意见》（2023）
+        </div>
+      </div>
+    </div>
+
+    <h3>🏗️ 二、七个工程</h3>
+    <div class="project-grid">
+      <div class="project-item">
+        <span class="project-num">1</span>
+        <div class="project-title">古文字与中华文明传承发展工程</div>
+        <div class="project-desc">科学研究阐释：实施古文字与中华文明传承发展工程</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">2</span>
+        <div class="project-title">中华经典诵读工程</div>
+        <div class="project-desc">推进教育普及：大力实施全民语言文化素养提升行动</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">3</span>
+        <div class="project-title">中国语言资源保护工程</div>
+        <div class="project-desc">保护开发资源：实施中国语言资源保护工程</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">4</span>
+        <div class="project-title">国家数字中文建设工程</div>
+        <div class="project-desc">强化数字赋能：深化语言文字与信息技术融合，加强人工智能应用</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">5</span>
+        <div class="project-title">国家语言能力建设工程</div>
+        <div class="project-desc">建强人才队伍：加强语言文化人才的培养、储备和使用</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">6</span>
+        <div class="project-title">中华语言文化传播工程</div>
+        <div class="project-desc">加强推广传播：优化传播理念，创新传播方式，提升传播效果</div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">7</span>
+        <div class="project-title">中华思想文化术语传播工程</div>
+        <div class="project-desc">深化交流互鉴：构建融通中外、立足时代、国际表达于一体的中华思想文化术语阐释体系</div>
+      </div>
+    </div>
+
+    <h3>🚀 三、九大计划项目</h3>
+    <ol>
+      <li><strong>中华文化优秀课程多语种数字化全球传播计划</strong>（3200·116·25，平台）</li>
+      <li><strong>国家关键领域语料库智能体共建共享计划</strong>（十个领域）</li>
+      <li><strong>国家关键领域语言科技赋能领航计划</strong>（多部门联发，多主体创新）</li>
+      <li><strong>青年语言文字学者海外研修项目</strong>（针对性、满意度）</li>
+      <li><strong>青年语言文字研究培养项目</strong>（12期）</li>
+      <li><strong>语言科学专业建设项目</strong>（10校试点）</li>
+      <li><strong>国家语言文字科研领航计划</strong>（有储备）</li>
+      <li><strong>国家语言文字科研项目</strong>（适应需求，五年规划，三位一体大语言格局）</li>
+      <li><strong>青少年语言素养提升行动</strong>（语言文化素养，大语言模型素养，阅读素养）</li>
+    </ol>
+
+    <h3>🔢 数字中文建设：五五发展格局</h3>
+    <div class="framework-box">
+      <h4>📌 加强语言规范建设，健全完善语言标准</h4>
+      <p>落实《教育强国建设规划纲要》"健全语言文字规范标准体系"</p>
+      <p>履行《国家通用语言文字法》"国家颁布国家通用语言文字的规范和标准"法定职责</p>
+      
+      <table class="info-table">
+        <tr>
+          <th>发布规范标准</th>
+          <th>开展认证与监测</th>
+          <th>推进宣传推广</th>
+        </tr>
+        <tr>
+          <td>11项<br>《信息处理用现代汉语词语类标记规范》<br>《国家通用手语水平等级标准》<br>《汉藏语》等</td>
+          <td>90家单位<br>市场监管总局第54号令<br>《信息技术产品国家通用语言文字使用管理规定》……</td>
+          <td>6期<br>示范培训<br>面向地方教育干部<br>面向学校骨干教师<br>面向播音主持人员</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3>💎 数字中文建设：五五发展格局</h3>
+    <div class="list-grid">
+      <div class="list-item">
+        <strong>五个战略导向</strong>
+        需求牵引、语技融合、资源开发、聚焦关键、全局赋能
+      </div>
+      <div class="list-item">
+        <strong>五个前沿技术</strong>
+        自然语言处理、大语言模型、多模态信息处理、知识图谱、语料加工
+      </div>
+      <div class="list-item">
+        <strong>五个保障体系</strong>
+        规范标准、资源服务、人才培养、协同创新、安全治理
+      </div>
+      <div class="list-item">
+        <strong>五大行动</strong>
+        数字中文服务教育发展行动 / 数字中文助力科技创新行动 / 数字中文赋能文化传承行动 / 数字中文推动产业升级行动 / 数字中文促进社会进步行动
+      </div>
+    </div>
+  </div>
+
+  <!-- Strategy Section -->
+  <div class="section" id="strategy">
+    <div class="section-header">
+      <div class="section-num">策</div>
+      <div>
+        <div class="section-title">宏观战略思考</div>
+        <div class="section-subtitle">——关于构建大语言工作格局的五个维度</div>
+      </div>
+    </div>
+
+    <h3>🚀 关于构建大语言工作格局的宏观思考</h3>
+
+    <div class="strategy-card">
+      <h4>一、树立大语言观念（知晓率）</h4>
+      <p><strong>深入：</strong>从本质、属性和规律上研究；认知边界，六大资源功能，从教育起步，以人为本，转化—服务—能力</p>
+      <p><strong>跳出：</strong>从政治、战略和大局上审视；强国—强语：全球+国家，客观结合点，服务发力点，能力支撑点</p>
+      <p><strong>掌控：</strong>从教育、文化和科技上转化；普及应用—卡嗓子、智力语言—卡脑子、技术创新卡脖子；双向赋能</p>
+      <p><strong>开发：</strong>从资源、数据和资产上着力；工具—要素，经济社会发展，高价值领域；赋能项目</p>
+      <p><strong>扎根：</strong>从使命、职责和岗位上行动；学术研究，决策支持，战略谋划；三型人才</p>
+    </div>
+
+    <div class="quote-box">
+      <strong>使命感 · 责任 · 紧迫感</strong><br>
+      使命感来自：新质生产力、新质战斗力、人才支撑力、科技竞争力、文化软实力、认知引领力
+    </div>
+
+    <h3>🤖 人工智能与语言文字："双向赋能"</h3>
+    <div class="framework-box">
+      <p><span class="highlight-red">源远流长的中国语言文字</span></p>
+      <p><span class="highlight-blue">日新月异的世界人工智能</span></p>
+      <p><strong>当前交汇融合—双向赋能：</strong>难得机遇，可控风险，无限潜能</p>
+      <p><strong>影响：</strong>世界的未来，未来的世界</p>
+      <hr style="margin: 15px 0; border: 1px dashed #ccc;">
+      <p>人是万物之灵，创造世界和历史，未来：两个人——自然人+机器人</p>
+      <p>人机协同：两种语言，两种思维，两个世界</p>
+      <p>人工智能大语言模型三要素：算力，算法，数据：<strong>语言占比</strong></p>
+      <p>语言文字，语言文化，语言文明，转化：语言资源，语言数据，语言资产，语言资本</p>
+      <p style="text-align: center; font-weight: bold; color: #c31432;">→ 人的全面发展，经济社会发展，国家安全发展</p>
+      <p><strong>重新定义：何为语言，语言何为——语言为何？</strong></p>
+    </div>
+
+    <h3>🌐 国家关键领域语言科技赋能体系</h3>
+    <div class="list-grid">
+      <div class="list-item">
+        <strong>教育发展</strong>
+        学科建设，人才培养
+      </div>
+      <div class="list-item">
+        <strong>科技自强</strong>
+        语言科技，AI赋能
+      </div>
+      <div class="list-item">
+        <strong>文化传承</strong>
+        中华文化，文明互鉴
+      </div>
+      <div class="list-item">
+        <strong>产业升级</strong>
+        语言服务，数字经济
+      </div>
+      <div class="list-item">
+        <strong>社会民生</strong>
+        应急语言，公共服务
+      </div>
+      <div class="list-item">
+        <strong>国防建设</strong>
+        语言安全，国防语言
+      </div>
+      <div class="list-item">
+        <strong>大国外交</strong>
+        国际传播，文化交流
+      </div>
+      <div class="list-item">
+        <strong>国家语言能力</strong>
+        战略支撑，能力建设
+      </div>
+    </div>
+  </div>
+
+  <!-- Conclusion Section -->
+  <div class="section" id="conclusion">
+    <div class="section-header">
+      <div class="section-num">结</div>
+      <div>
+        <div class="section-title">从"思考"到"行动"</div>
+        <div class="section-subtitle">——找到着力点</div>
+      </div>
+    </div>
+
+    <h3>🎯 学者众筹，重点关注：国家关键领域语言科技赋能示范项目</h3>
+    <p><strong>（立项研究 / 成果转化 / 应用案例）</strong></p>
+    <p style="text-align: center; font-size: 1.1rem; color: #c31432;">
+      ……语言文字，语言资源，语言数据，语言资产，语言资本，语言科技，语言产品，语言项目……
+    </p>
+
+    <h3>📝 提出一个项目建议：基本要素</h3>
+    <table class="info-table">
+      <tr>
+        <th>要素</th>
+        <th>具体要求</th>
+      </tr>
+      <tr>
+        <td><strong>一、体例格式</strong></td>
+        <td>1基本背景，2项目概括，3需求与供给：语言-技术-产品-项目</td>
+      </tr>
+      <tr>
+        <td><strong>二、关键领域</strong></td>
+        <td>教科文、健康、产业、社会、国防、外交</td>
+      </tr>
+      <tr>
+        <td><strong>三、基本要求</strong></td>
+        <td>见人见物见事，见效：<strong>X 赋能 Y = 效能</strong></td>
+      </tr>
+      <tr>
+        <td><strong>四、项目类型</strong></td>
+        <td>A支持立项，B储备成果，C推荐案例</td>
+      </tr>
+      <tr>
+        <td><strong>五、项目主体</strong></td>
+        <td>政府、行业、高校、科研机构、企业、其他社会组织</td>
+      </tr>
+      <tr>
+        <td><strong>六、支持措施</strong></td>
+        <td>命名？经费？</td>
+      </tr>
+      <tr>
+        <td><strong>七、政策建议</strong></td>
+        <td>工程、计划、行动、政策……</td>
+      </tr>
+    </table>
+
+    <div class="conclusion-box">
+      <h2>🎯 大语言工作格局总目标</h2>
+      <p><strong>强语 · 强教 · 强国</strong></p>
+      <p>教育 · 服务 · 能力</p>
+      <p style="margin-top: 20px;">资源、要素、价值</p>
+      <p>教科文、安全、战略、资源</p>
+      <p>经济社会发展要素 · 国家战略价值</p>
+    </div>
+  </div>
+
+  <!-- Closing Section -->
+  <div class="closing-quote">
+    <p style="color: #ffd700; letter-spacing: 8px;">强语 · 强教 · 强国</p>
+    <p style="font-size: 1.5rem; margin: 15px 0;">教育 · 服务 · 能力</p>
+    <p style="font-size: 1.2rem; margin-top: 20px;">
+      <strong>语言</strong>：人类交流思想的工具，传承文明的载体，增进理解的桥梁
+    </p>
+    <div class="big-text">了解一个国家最好的钥匙</div>
+    <p>一个国家文化的魅力、一个民族的凝聚力，主要通过语言表达和传递</p>
+    <p style="margin-top: 20px;">全方位发挥语言资源功能作用，全方位释放语言数据要素价值</p>
+    <p style="font-size: 1.3rem; font-weight: bold; color: #ffd700; margin-top: 25px;">
+      全局赋能：人的全面发展、经济社会发展、国家安全发展
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align: center; padding: 30px; background: #f8f9fa; color: #6c757d; font-size: 0.9rem;">
+    <p>📍 资料来源：中青年学者研修班报告</p>
+    <p>📅 时间：2026年7月 · 福建·厦门</p>
+    <p>🎓 主办：教育部语言文字信息管理司 | 承办：厦门大学</p>
+    <hr style="margin: 20px auto; width: 200px; border: 1px solid #dee2e6;">
+    <p style="color: #adb5bd;">本HTML文件由WorkBuddy自动生成</p>
+    <p style="margin-top: 18px;"><a href="index.html" style="color: #1e3c72; text-decoration: none; font-weight: 600;">← 返回主页</a></p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语言文字优秀青年培训12期 · 学习资料汇总</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary: #1a3a5c;
+            --primary-light: #2c5f8a;
+            --accent: #c9962e;
+            --accent-light: #e0b85c;
+            --bg: #f5f3ef;
+            --card-bg: #ffffff;
+            --text: #2c2c2c;
+            --text-light: #666;
+            --border: #e0ddd6;
+            --shadow: 0 2px 12px rgba(0,0,0,0.08);
+            --shadow-hover: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: #fff;
+            padding: 60px 20px 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(201,150,46,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+        .hero .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            position: relative;
+            z-index: 1;
+        }
+        .hero .divider {
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+            margin: 20px auto;
+            position: relative;
+            z-index: 1;
+        }
+        .hero .meta {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== Container ===== */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* ===== Section Title ===== */
+        .section-title {
+            font-size: 1.6rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title .icon {
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* ===== PDF Cards ===== */
+        .pdf-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 28px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
+            border: 1px solid var(--border);
+        }
+        .pdf-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+        .pdf-card-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: #fff;
+            padding: 20px 28px;
+            position: relative;
+        }
+        .pdf-card-header .tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            margin-bottom: 8px;
+        }
+        .pdf-card-header h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        .pdf-card-header .author {
+            font-size: 0.88rem;
+            opacity: 0.85;
+            margin-top: 6px;
+        }
+        .pdf-card-header .badge {
+            position: absolute;
+            top: 20px;
+            right: 28px;
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        .pdf-card-body {
+            padding: 24px 28px;
+        }
+        .pdf-card-body h4 {
+            color: var(--primary);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-top: 16px;
+            padding-left: 12px;
+            border-left: 3px solid var(--accent);
+        }
+        .pdf-card-body h4:first-child { margin-top: 0; }
+        .pdf-card-body p {
+            color: var(--text);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        .pdf-card-body ul {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+        .pdf-card-body ul li {
+            font-size: 0.92rem;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+        .key-point {
+            background: #fdf8ed;
+            border: 1px solid var(--accent-light);
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 14px 0;
+            font-size: 0.92rem;
+        }
+        .key-point strong {
+            color: var(--accent);
+        }
+        .pdf-card-footer {
+            padding: 16px 28px;
+            background: #faf9f6;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .pdf-info {
+            font-size: 0.82rem;
+            color: var(--text-light);
+        }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .download-btn:hover {
+            background: var(--primary-light);
+            transform: translateY(-1px);
+        }
+        .download-btn .arrow {
+            font-size: 0.8rem;
+        }
+
+        /* ===== Links Section ===== */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        .link-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px 20px;
+            transition: box-shadow 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .link-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+        .link-card .source {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+            width: fit-content;
+        }
+        .source-xuexi { background: #e8f0fe; color: #1a56db; }
+        .source-weixin { background: #e8f5e9; color: #2e7d32; }
+        .source-cctv { background: #fff3e0; color: #e65100; }
+        .source-moe { background: #fce4ec; color: #c62828; }
+        .link-card .link-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.5;
+        }
+        .link-card .link-desc {
+            font-size: 0.82rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        .link-card .link-url {
+            font-size: 0.72rem;
+            color: #999;
+            word-break: break-all;
+            margin-top: 4px;
+        }
+        .link-card .visit-arrow {
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        /* ===== Notes Section ===== */
+        .notes-box {
+            background: #fdf8ed;
+            border: 1px solid var(--accent-light);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-top: 36px;
+        }
+        .notes-box h3 {
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .notes-box ul {
+            margin-left: 20px;
+        }
+        .notes-box ul li {
+            margin-bottom: 8px;
+            font-size: 0.92rem;
+            color: var(--text);
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--text-light);
+            font-size: 0.82rem;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.6rem; }
+            .hero .subtitle { font-size: 0.95rem; }
+            .pdf-card-header h3 { font-size: 1.05rem; }
+            .pdf-card-body { padding: 18px 20px; }
+            .links-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.3rem; }
+        }
+
+        /* ===== Nav ===== */
+        .nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .nav-bar a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+        .nav-bar a:hover {
+            background: var(--bg);
+        }
+        .nav-bar a.home-link {
+            background: var(--primary);
+            color: #fff;
+        }
+        .nav-bar a.home-link:hover {
+            background: var(--primary-light);
+        }
+        .footer-home-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 16px;
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        .footer-home-link:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Hero ===== -->
+    <div class="hero">
+        <h1>语言文字优秀青年培训 · 第12期</h1>
+        <div class="divider"></div>
+        <div class="subtitle">学习资料汇总 · 文献观点概览</div>
+        <div class="meta">资料来源：赵世举教授学术论文及学习资料汇编 | 整理日期：2026年7月</div>
+    </div>
+
+    <!-- ===== Nav ===== -->
+    <nav class="nav-bar">
+        <a href="index.html" class="home-link">← 返回主页</a>
+        <a href="#papers">学术论文</a>
+        <a href="#links">学习链接</a>
+        <a href="#notes">学习要点</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- ===== PDF Papers ===== -->
+        <div id="papers">
+            <div class="section-title">
+                <span class="icon">文</span>
+                <span>学术文献 · 内容与观点概览</span>
+            </div>
+
+            <!-- Paper 1 -->
+            <div class="pdf-card">
+                <div class="pdf-card-header">
+                    <span class="tag">学术报告</span>
+                    <span class="badge">27页</span>
+                    <h3>"词元"对语言学的挑战与大语言观的建构</h3>
+                    <div class="author">赵世举 · 武汉大学文学院</div>
+                </div>
+                <div class="pdf-card-body">
+                    <h4>报告背景</h4>
+                    <p>2026年3月，全国科学技术名词审定委员会公告将人工智能核心术语"Token"正式定名为"词元"。中国日均词元调用量两年内从1000亿次激增至140万亿次，增长超千倍。词元被视为AI时代的"货币""数字石油"和"数字电力"，兼具信息单位、算力单位和货币单位三重角色。</p>
+
+                    <h4>主要内容</h4>
+                    <ul>
+                        <li><strong>话题缘起：</strong>"词元"定名引发广泛关注，标志着AI时代基础概念从"技术语言"转向"基础设施语言"，命名权从学术界转向国家与产业体系。</li>
+                        <li><strong>一、"词元"及其带来的困惑与挑战：</strong>词元是智能机器处理信息时对信息载体切分产生的基本结构单元，包括语素、单词、短语、字符、标点及音频片段、图像块等。其命名突破了语言内涵、结构规则和使用规则——既不全是语言成分，也不全是语言结构单位，却以"词"为构词词素。</li>
+                        <li><strong>二、关于语言的再认识：</strong>提出"大语言"概念，统观人的语言、机器语言及其他生物通信方式，寻找共性——"信息性"。引用维纳控制论思想，尝试重新定义语言。</li>
+                        <li><strong>三、大语言观视域中的新领域：</strong>指出语言科学技术、数字中文建设、认知语言学、语言经济学、语言与健康等交叉领域的发展机遇。</li>
+                    </ul>
+
+                    <div class="key-point">
+                        <strong>核心观点：</strong>语言的边界正在被突破，非语言符号也被视为语言元素，语言的性质和功能已改变。语言应再定义为"生物体和智能机器用于交流信息的方式及其表征形式构成的复合性媒介系统"——即"大语言"。
+                    </div>
+                </div>
+                <div class="pdf-card-footer">
+                    <span class="pdf-info">会议："一带一路"语言与文化青年学者学术论坛（2026.6.26 大连外国语大学）</span>
+                    <a class="download-btn" href="“词元”对语言学的挑战与大语言观的建构.pdf" download>
+                        下载 PDF <span class="arrow">↓</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Paper 2 -->
+            <div class="pdf-card">
+                <div class="pdf-card-header">
+                    <span class="tag">学术报告</span>
+                    <span class="badge">28页</span>
+                    <h3>"词元"对语言学的挑战及语言服务的新使命</h3>
+                    <div class="author">赵世举 · 武汉大学文学院</div>
+                </div>
+                <div class="pdf-card-body">
+                    <h4>报告背景</h4>
+                    <p>本报告与上一篇同源而各有侧重，聚焦"词元"对语言服务领域带来的新使命与新机遇，在成渝地区双城经济圈语言服务产业高质量发展论坛上发表。</p>
+
+                    <h4>主要内容</h4>
+                    <ul>
+                        <li><strong>一、"词元"及其带来的"悖论"：</strong>深入阐释词元的定义——token源于古英语tācen（符号/标记），是文本切分或字节级编码后的最小离散单元，既可能是词串、单个词，也可能是词根、词缀或字符。随着多模态发展，token所指已扩展至图像块、语音片段。"词元"中的"词"超越了人类语言意义上的"词"，暗合术语命名中的类比思维。</li>
+                        <li><strong>二、词元对语言学的挑战与新思考：</strong>词元突破了语言边界、改变了语言性质和功能、增添了语言元素。基于"大语言"共性——"信息性"，提出语言的重新定义。</li>
+                        <li><strong>三、语言服务发展的新使命新机遇：</strong>系统阐述"词元经济"概念——在生成式AI运行和应用过程中，以词元为基础计量单位，围绕模型调用、信息处理、成本核算、服务定价和价值转化形成的资源配置方式。分析词元经济产业链五大核心环节：算力基础设施、智算中心与AI云、模型服务、AI应用与智能体、社会与经济影响。</li>
+                    </ul>
+
+                    <div class="key-point">
+                        <strong>核心观点：</strong>如果说互联网时代的核心资源是流量，那么AI时代最基础、最普遍也最具有计量意义的资源正在转变为词元。词元经济催生了"AI语言训练师""语料采集加工师""多模态信息分析师""AI应用场景语用设计师"等新岗位，为语言服务带来新需求和新天地。
+                    </div>
+                </div>
+                <div class="pdf-card-footer">
+                    <span class="pdf-info">会议：成渝地区双城经济圈语言服务产业高质量发展论坛（2026.5.16 四川外国语大学）</span>
+                    <a class="download-btn" href="“词元”对语言学的挑战及语言服务的新使命.pdf" download>
+                        下载 PDF <span class="arrow">↓</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Paper 3 -->
+            <div class="pdf-card">
+                <div class="pdf-card-header">
+                    <span class="tag">学术报告</span>
+                    <span class="badge">19页</span>
+                    <h3>从数字中文建设看训诂学的新使命和机遇</h3>
+                    <div class="author">赵世举 · 武汉大学文学院</div>
+                </div>
+                <div class="pdf-card-body">
+                    <h4>报告背景</h4>
+                    <p>教育部、国家语委、中央网信办联合印发《关于加强数字中文建设，推进语言文字信息化发展的意见》，国务院《教育发展"十五五"规划》明确提出加强数字中文建设。本报告探讨训诂学如何在数字中文建设中找到新的使命和机遇。</p>
+
+                    <h4>数字中文的内涵</h4>
+                    <p>数字中文是运用信息技术建设的具有数字化形态和多样化功能、能够进行数智化处理和利用的中文信息资源。其实质是现实世界的中文信息资源在数字世界的转化和再生形式，是数字世界的重要基础资源。数字中文建设是事关国家发展和安全的全局性战略性基础建设。</p>
+
+                    <h4>四大使命与机遇</h4>
+                    <ul>
+                        <li><strong>一、助力数字世界的语言文化基础建设：</strong>古代珍稀语言文化典籍整理及数智化、古代语言文化知识系统化整理及数智化、知识数智化挖掘及转化创新、助力构建人类文明新形态和人机共创文明新模式。</li>
+                        <li><strong>二、助力语言科技创新和机器立心铸魂：</strong>整理挖掘古代思想资源，为科技注入"人文养料"，编织"人文之缰"和安全护栏。引用朱松纯观点：象形文字有利于构建多模态大模型，中国思想有利于赋予AI符合人类伦理的情感与价值系统，让机器"致良知"。</li>
+                        <li><strong>三、助力新质生产力和数字经济发展：</strong>挖掘古代思想资源为新质生产力厚植文化根基、助力数智化语言产业和文化产业发展、参与打造中文数字资源高地、在"词元经济"领域做文章。</li>
+                        <li><strong>四、助力中国语言文化国际传播和文明互鉴：</strong>古代语言文字数智化研发及国际传播、中医典籍整理及数智化传播、海外汉籍整理数智化及反馈交流。</li>
+                    </ul>
+
+                    <div class="key-point">
+                        <strong>核心观点：</strong>训诂学应做数字中文建设的建设者和受益者——既为数字中国建设做贡献，又利用数智技术推进训诂学研究范式和手段革新。"一代有一代之学术"，强调与时俱进不是为了抛弃传统，而是为了在继承中图新。
+                    </div>
+                </div>
+                <div class="pdf-card-footer">
+                    <span class="pdf-info">会议：中国训诂学研究会第十二届理事会第三次会议（2026.7.8-9 辽宁师大）</span>
+                    <a class="download-btn" href="从数字中文建设看训诂学的新使命和机遇.pdf" download>
+                        下载 PDF <span class="arrow">↓</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Paper 4 -->
+            <div class="pdf-card">
+                <div class="pdf-card-header">
+                    <span class="tag">学术访谈</span>
+                    <span class="badge">8页</span>
+                    <h3>语言观与语言研究方法论漫谈——武汉大学博士生导师赵世举教授访谈</h3>
+                    <div class="author">赵世举、沈淑花 · 《社会科学家》2020年第10期</div>
+                </div>
+                <div class="pdf-card-body">
+                    <h4>访谈背景</h4>
+                    <p>本文为沈淑花对赵世举教授的学术访谈，系统梳理了赵教授的语言观、研究方法论、四次学术转型历程及中文学科建设实践。文章发表于《社会科学家》2020年第10期。</p>
+
+                    <h4>核心观点</h4>
+                    <ul>
+                        <li><strong>全面语言观：</strong>语言是一个具有复杂的内部结构、广泛的外部联系、多种多样功能的综合性复杂系统。语言研究必须注重整体观、联系性和多维度——将任何要素放在系统中、联系中、整体中去考察。</li>
+                        <li><strong>语言为用而生：</strong>"语言为用而生，语言学为用而兴。"服务为本、经世致用是语言学的主流传统。本体和应用是一体两面，做本体研究要面向应用，做应用研究要借重于本体，二者紧密结合，相向而行。</li>
+                        <li><strong>问题导向：</strong>语言研究要从语言事实出发，而非从理论出发。不能照搬套用西方理论，要择善而用——"就好比医生给病人做手术，再先进的手术刀也不可能解决手术的所有问题"。</li>
+                        <li><strong>跨学科研究：</strong>跨学科既可以是问题驱动的多学科协作，也可以是临近学科的跨域交叉和借鉴研究。当今智能化时代迫切需要语言学与计算机科学、信息管理、医学、公安学等领域的协同研究。</li>
+                    </ul>
+
+                    <h4>四次学术转型</h4>
+                    <ul>
+                        <li><strong>第一次（古→今）：</strong>从古代汉语转向现代汉语，推动古汉语和现代汉语教研室合并。</li>
+                        <li><strong>第二次（→汉语国际传播）：</strong>创办对外汉语专业，创建国家汉办教学资源研发基地，与美国匹兹堡大学合作建设孔子学院。</li>
+                        <li><strong>第三次（→语言科学技术）：</strong>搭建"语言科学技术与当代社会建设跨学科创新平台"，跻身"985"建设行列。</li>
+                        <li><strong>第四次（→语言战略与政策）：</strong>主持教育部重大攻关项目"新形势下国家语言文字发展战略研究"，创建中国语情监测与研究中心。</li>
+                    </ul>
+
+                    <div class="key-point">
+                        <strong>核心观点：</strong>中文学科面临边缘化困境，既有客观原因，也与自身故步自封、脱离社会有关。出路在于"立足基础，面向应用，注重传承，大胆创新"——练强内功求生存，通过创新求发展，借助担当赢重视。
+                    </div>
+                </div>
+                <div class="pdf-card-footer">
+                    <span class="pdf-info">来源：《社会科学家》2020年第10期 · 中图分类号：H0-0 · 文章编号：1002-3240(2020)10-0003-07</span>
+                    <a class="download-btn" href="语言观与语言研究方法论漫谈...学博士生导师.pdf" download>
+                        下载 PDF <span class="arrow">↓</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Links Section ===== -->
+        <div id="links" style="margin-top: 48px;">
+            <div class="section-title">
+                <span class="icon">链</span>
+                <span>学习资料 · 网页链接</span>
+            </div>
+
+            <div class="links-grid">
+
+                <!-- Link 1: 学习强国 -->
+                <a class="link-card" href="https://article.xuexi.cn/articles/index.html?art_id=1473227156618964755&item_id=1473227156618964755&study_style_id=feeds_default&t=1755508821765&showmenu=false&source=share&share_to=wx_single" target="_blank" rel="noopener">
+                    <span class="source source-xuexi">📚 学习强国</span>
+                    <div class="link-title">书同文 语同音 人同心——中国共产党领导语言文字事业的百年历程和经验启示</div>
+                    <div class="link-desc">回顾中国共产党百年历程中领导语言文字事业发展的光辉历程，总结历史经验和启示。</div>
+                    <div class="visit-arrow">点击访问 →</div>
+                </a>
+
+                <!-- Link 2: 学习强国 -->
+                <a class="link-card" href="https://article.xuexi.cn/articles/index.html?art_id=11727766412707900645&item_id=11727766412707900645&study_style_id=feeds_default&t=1635102000992&showmenu=false&source=share&share_to=wx_single" target="_blank" rel="noopener">
+                    <span class="source source-xuexi">📚 学习强国</span>
+                    <div class="link-title">坚持以人民为中心发展语言文字事业</div>
+                    <div class="link-desc">深入阐述以人民为中心的语言文字事业发展理念，总结语言文字事业服务人民群众的实践路径。</div>
+                    <div class="visit-arrow">点击访问 →</div>
+                </a>
+
+                <!-- Link 3: 微信公众号 -->
+                <a class="link-card" href="https://mp.weixin.qq.com/s/QSILklAuFn9I19EVr4rG4A" target="_blank" rel="noopener">
+                    <span class="source source-weixin">💬 微信公众号</span>
+                    <div class="link-title">习近平在2026世界人工智能大会暨人工智能全球治理高级别会议开幕式上的主旨讲话（全文）</div>
+                    <div class="link-desc">习近平总书记在世界人工智能大会开幕式上的主旨讲话，阐述人工智能时代的发展方向与中国主张。</div>
+                    <div class="visit-arrow">点击访问 →</div>
+                </a>
+
+                <!-- Link 4: 微信公众号 -->
+                <a class="link-card" href="https://mp.weixin.qq.com/s/eDZsvL7Rud43o-1TiznkMQ" target="_blank" rel="noopener">
+                    <span class="source source-weixin">💬 微信公众号</span>
+                    <div class="link-title">中缅英互译系统，再上央视！</div>
+                    <div class="link-desc">北京语言大学韩林涛副教授团队基于DeepSeek大语言模型开发的"中缅英互译系统"用于国际救援，入选2025世界人工智能大会案例集。提出"智能翻译学"新范式及"卓越语言工程师"人才培养定位。</div>
+                    <div class="visit-arrow">点击访问 →</div>
+                </a>
+
+                <!-- Link 5: CCTV -->
+                <a class="link-card" href="https://content-static.cctvnews.cctv.com/snow-book/video.html?item_id=7526764895217421298&t=1784358465749&toc_style_id=video_default&track_id=F039A03C-F626-4682-8E58-E3AF1440E0EA_806051856528&share_to=wechat" target="_blank" rel="noopener">
+                    <span class="source source-cctv">📺 央视新闻</span>
+                    <div class="link-title">古文字工程"十四五"成果展国博开展</div>
+                    <div class="link-desc">央视新闻报道古文字工程在"十四五"期间取得的重要成果在国家博物馆展出。</div>
+                    <div class="visit-arrow">点击访问 →</div>
+                </a>
+
+                <!-- Link 6: 教育部 -->
+                <a class="link-card" href="http://www.moe.gov.cn/jyb_xwfb/moe_2082/2024/2024_zl13/202410/t20241024_1158998.html" target="_blank" rel="noopener">
+                    <span class="source source-moe">🏛 教育部</span>
+                    <div class="link-title">大力提升国家语言能力 全力服务教育强国建设</div>
+                    <div class="link-desc">教育部语言文字信息管理司司长刘培俊撰文，提出以大语言格局服务党和国家事业发展，从思政引领力、人才竞争力、科技支撑力、民生保障力、社会协同力、国际影响力六个方面系统加强国家语言能力建设。</div>
+                    <div class="visit-arrow">点击访问 →</div>
+                </a>
+
+                <!-- Link 7: 学习强国 -->
+                <a class="link-card" href="https://article.xuexi.cn/articles/index.html?art_id=3714775800912215933&item_id=3714775800912215933&study_style_id=feeds_opaque&t=1760062705815&showmenu=false&source=share&share_to=wx_single" target="_blank" rel="noopener">
+                    <span class="source source-xuexi">📚 学习强国</span>
+                    <div class="link-title">推广普及国家通用语言文字——发挥语言文字在脱贫攻坚中的支撑作用</div>
+                    <div class="link-desc">阐述推广普及国家通用语言文字在脱贫攻坚和乡村振兴中的重要作用与实践成效。</div>
+                    <div class="visit-arrow">点击访问 →</div>
+                </a>
+
+                <!-- Link 8: 学习强国 -->
+                <a class="link-card" href="https://article.xuexi.cn/articles/index.html?art_id=7639468913042953632&item_id=7639468913042953632&study_style_id=feeds_opaque&t=1683547633206&showmenu=false&source=share&share_to=wx_single" target="_blank" rel="noopener">
+                    <span class="source source-xuexi">📚 学习强国</span>
+                    <div class="link-title">书同文、语同音、人同心 加大国家通用语言文字推广力度</div>
+                    <div class="link-desc">深入论述加大国家通用语言文字推广力度的时代意义，铸牢中华民族共同体意识。</div>
+                    <div class="visit-arrow">点击访问 →</div>
+                </a>
+
+                <!-- Link 9: 学习强国 -->
+                <a class="link-card" href="https://article.xuexi.cn/articles/index.html?art_id=6067581957666187502&item_id=6067581957666187502&study_style_id=feeds_default&t=1674965321340&showmenu=false&source=share&share_to=wx_single" target="_blank" rel="noopener">
+                    <span class="source source-xuexi">📚 学习强国</span>
+                    <div class="link-title">深入学习贯彻党的二十大精神 加大国家通用语言文字推广力度</div>
+                    <div class="link-desc">结合党的二十大精神，系统阐述新时代加大国家通用语言文字推广力度的时代要求与实践路径。</div>
+                    <div class="visit-arrow">点击访问 →</div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- ===== Notes ===== -->
+        <div id="notes" class="notes-box">
+            <h3>📌 学习要点提示</h3>
+            <ul>
+                <li><strong>反思自己的突破点：</strong>结合赵世举教授的四次学术转型经验，思考个人研究方向如何与时代需求对接。</li>
+                <li><strong>与国家战略服务：</strong>语言研究应服务国家发展大局，关注数字中文建设、AI赋能、语言能力提升等国家战略方向。</li>
+                <li><strong>语言国情：</strong>扩展研究视野，增强研究能力，深入了解当代语言生活变化和语言服务新需求。</li>
+                <li><strong>"大语言观"：</strong>语言正在被重新定义——从人的专属工具到生物体和智能机器共有的信息交流媒介系统，这为语言学理论创新和学科发展提供了新契机。</li>
+                <li><strong>词元经济：</strong>关注AI时代语言服务的新业态、新岗位和新模式，把握"词元经济"带来的产业发展机遇。</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <div class="footer">
+        <p>语言文字优秀青年培训 · 第12期 · 学习资料汇总</p>
+        <p style="margin-top: 4px;">文献作者：赵世举教授（武汉大学文学院） | 本页面仅供学习交流使用</p>
+        <p style="margin-top: 12px;"><a href="index.html" class="footer-home-link">← 返回主页</a></p>
+    </div>
+
+</body>
+</html>

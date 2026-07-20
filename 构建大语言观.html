@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>构建大语言观 服务时代发展需求 — 赵世举</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+        --primary: #1a3a5c;
+        --primary-light: #2c5f8a;
+        --primary-dark: #0f2540;
+        --accent: #c9962e;
+        --accent-light: #e0b85c;
+        --bg: #f5f3ef;
+        --card-bg: #ffffff;
+        --text: #2c2c2c;
+        --text-light: #666;
+        --border: #e0ddd6;
+        --shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    body {
+        font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.8;
+        min-height: 100vh;
+    }
+
+    /* ===== Back Bar ===== */
+    .back-bar {
+        background: var(--primary-dark);
+        padding: 10px 20px;
+    }
+    .back-bar a {
+        color: var(--accent-light);
+        text-decoration: none;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: opacity 0.3s;
+    }
+    .back-bar a:hover { opacity: 0.8; }
+
+    /* ===== Hero ===== */
+    .hero {
+        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+        color: #fff;
+        padding: 60px 20px 50px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(201,150,46,0.15) 0%, transparent 70%);
+        border-radius: 50%;
+    }
+    .hero .badge {
+        display: inline-block;
+        background: rgba(201,150,46,0.2);
+        color: var(--accent-light);
+        padding: 6px 20px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(201,150,46,0.4);
+        position: relative;
+        z-index: 1;
+    }
+    .hero h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+        position: relative;
+        z-index: 1;
+    }
+    .hero .subtitle {
+        font-size: 1rem;
+        opacity: 0.9;
+        position: relative;
+        z-index: 1;
+    }
+    .hero .meta {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+        opacity: 0.85;
+        position: relative;
+        z-index: 1;
+    }
+    .hero .meta-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    /* ===== Slide Navigation ===== */
+    .slide-nav {
+        max-width: 1100px;
+        margin: 30px auto 0;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .slide-nav select {
+        padding: 8px 14px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        font-size: 0.9rem;
+        background: #fff;
+        color: var(--text);
+        cursor: pointer;
+        font-family: inherit;
+    }
+    .slide-nav .nav-info {
+        font-size: 0.9rem;
+        color: var(--text-light);
+    }
+
+    /* ===== Container ===== */
+    .container {
+        max-width: 1100px;
+        margin: 30px auto 60px;
+        padding: 0 20px;
+    }
+
+    /* ===== Slide Display ===== */
+    .slide-display {
+        background: var(--card-bg);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+    }
+    .slide-display img {
+        width: 100%;
+        display: block;
+    }
+    .slide-number {
+        text-align: center;
+        padding: 14px;
+        font-size: 0.9rem;
+        color: var(--text-light);
+        background: #fafaf7;
+        border-top: 1px solid var(--border);
+    }
+
+    /* ===== All Slides Grid ===== */
+    .section-header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 50px 0 24px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid var(--border);
+    }
+    .section-icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        color: #fff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+    .section-title {
+        font-size: 1.4rem;
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+    .slides-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .slides-grid .slide-thumb {
+        background: var(--card-bg);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+    }
+    .slides-grid .slide-thumb:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .slides-grid .slide-thumb img {
+        width: 100%;
+        display: block;
+    }
+    .slides-grid .slide-thumb .thumb-label {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        background: rgba(26,58,92,0.85);
+        color: #fff;
+        font-size: 0.8rem;
+        padding: 3px 10px;
+        border-radius: 4px;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+        background: var(--primary-dark);
+        color: rgba(255,255,255,0.8);
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 0.9rem;
+    }
+    .footer p { margin-bottom: 6px; }
+    .footer .copyright { opacity: 0.6; font-size: 0.85rem; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+        .hero h1 { font-size: 1.4rem; }
+        .slides-grid { grid-template-columns: 1fr; }
+        .hero .meta { gap: 14px; }
+    }
+</style>
+</head>
+<body>
+
+<!-- ============ Back Bar ============ -->
+<div class="back-bar">
+    <a href="index.html">← 返回培训主页</a>
+</div>
+
+<!-- ============ Hero ============ -->
+<section class="hero">
+    <div class="badge">7月20日 · 下午场</div>
+    <h1>构建大语言观 服务时代发展需求</h1>
+    <div class="meta">
+        <div class="meta-item">👤 主讲人：赵世举</div>
+        <div class="meta-item">🏫 武汉大学文学院</div>
+        <div class="meta-item">📅 14:00 — 17:00</div>
+    </div>
+</section>
+
+<!-- ============ Slide Navigator ============ -->
+<div class="slide-nav">
+    <span class="nav-info">共 31 张幻灯片</span>
+    <select id="slideSelect" onchange="jumpToSlide(this.value)">
+        <option value="0">第 1 张</option>
+        <option value="1">第 2 张</option>
+        <option value="2">第 3 张</option>
+        <option value="3">第 4 张</option>
+        <option value="4">第 5 张</option>
+        <option value="5">第 6 张</option>
+        <option value="6">第 7 张</option>
+        <option value="7">第 8 张</option>
+        <option value="8">第 9 张</option>
+        <option value="9">第 10 张</option>
+        <option value="10">第 11 张</option>
+        <option value="11">第 12 张</option>
+        <option value="12">第 13 张</option>
+        <option value="13">第 14 张</option>
+        <option value="14">第 15 张</option>
+        <option value="15">第 16 张</option>
+        <option value="16">第 17 张</option>
+        <option value="17">第 18 张</option>
+        <option value="18">第 19 张</option>
+        <option value="19">第 20 张</option>
+        <option value="20">第 21 张</option>
+        <option value="21">第 22 张</option>
+        <option value="22">第 23 张</option>
+        <option value="23">第 24 张</option>
+        <option value="24">第 25 张</option>
+        <option value="25">第 26 张</option>
+        <option value="26">第 27 张</option>
+        <option value="27">第 28 张</option>
+        <option value="28">第 29 张</option>
+        <option value="29">第 30 张</option>
+        <option value="30">第 31 张</option>
+    </select>
+</div>
+
+<!-- ============ Main Slide Display ============ -->
+<div class="container">
+    <div class="slide-display" id="mainSlide">
+        <img id="mainSlideImg" src="slides_大语言观/slide_01.png" alt="幻灯片">
+        <div class="slide-number" id="slideNumber">1 / 31</div>
+    </div>
+
+    <!-- ============ All Slides ============ -->
+    <div class="section-header">
+        <div class="section-icon">📑</div>
+        <h2 class="section-title">全部幻灯片浏览</h2>
+    </div>
+    <div class="slides-grid" id="slidesGrid"></div>
+</div>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+    <p>语言文字优秀青年培训第 12 期 · 赵世举专题报告</p>
+    <p class="copyright">© 2026 学习资料主页 · 仅供本期学员内部学习使用</p>
+</footer>
+
+<script>
+const TOTAL = 31;
+
+// Build thumbnail grid
+const grid = document.getElementById('slidesGrid');
+for (let i = 1; i <= TOTAL; i++) {
+    const num = String(i).padStart(2, '0');
+    const div = document.createElement('div');
+    div.className = 'slide-thumb';
+    div.onclick = () => jumpToSlide(i - 1);
+    div.innerHTML = `
+        <div class="thumb-label">第 ${i} 张</div>
+        <img src="slides_大语言观/slide_${num}.png" alt="幻灯片 ${i}" loading="lazy">
+    `;
+    grid.appendChild(div);
+}
+
+// Jump to slide
+function jumpToSlide(index) {
+    index = parseInt(index);
+    const num = String(index + 1).padStart(2, '0');
+    document.getElementById('mainSlideImg').src = `slides_大语言观/slide_${num}.png`;
+    document.getElementById('slideNumber').textContent = `${index + 1} / ${TOTAL}`;
+    document.getElementById('slideSelect').value = index;
+    document.getElementById('mainSlide').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
