@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>做有情怀、有担当的语言学研究</title>
+<style>
+  :root {
+    --primary: #6c3483;
+    --secondary: #8e44ad;
+    --accent: #e67e22;
+    --bg: #f8f4fb;
+    --card-bg: #ffffff;
+    --text: #2c3e50;
+    --border: #d5dbdb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 48px 24px 36px;
+    text-align: center;
+  }
+  .header h1 { font-size: 2em; margin-bottom: 8px; letter-spacing: 2px; }
+  .header .subtitle { font-size: 0.95em; opacity: 0.85; }
+  .container { max-width: 900px; margin: 0 auto; padding: 32px 24px; }
+  .toc {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .toc h2 { color: var(--primary); font-size: 1.3em; margin-bottom: 16px; border-bottom: 2px solid var(--secondary); padding-bottom: 8px; }
+  .toc ol { padding-left: 24px; }
+  .toc li { margin: 8px 0; }
+  .toc a { color: var(--secondary); text-decoration: none; }
+  .toc a:hover { color: var(--accent); }
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .section h2 {
+    color: var(--primary);
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-left: 5px solid var(--secondary);
+    padding-left: 14px;
+  }
+  .section h3 { color: var(--secondary); font-size: 1.15em; margin: 20px 0 12px; }
+  .section h4 { color: var(--primary); font-size: 1.05em; margin: 16px 0 10px; }
+  .section p { margin-bottom: 14px; text-align: justify; }
+  .section ul, .section ol { padding-left: 28px; margin-bottom: 14px; }
+  .section li { margin: 6px 0; }
+  .info-box {
+    background: #f5eef8;
+    border-left: 4px solid var(--secondary);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .quote-box {
+    background: #fef9e7;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-style: italic;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.92em; }
+  th, td { border: 1px solid var(--border); padding: 10px 14px; text-align: left; }
+  th { background: #f5eef8; color: var(--primary); font-weight: bold; }
+  tr:nth-child(even) { background: #fafafa; }
+  .stage-card {
+    background: #f8f4fb;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .stage-card .stage-title { font-weight: bold; color: var(--primary); margin-bottom: 4px; }
+  .tag {
+    display: inline-block;
+    background: #f5eef8;
+    color: var(--primary);
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin: 2px 4px;
+  }
+  .stat-highlight {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  .conclusion {
+    background: linear-gradient(135deg, #f5eef8, #fef9e7);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .conclusion h2 { color: var(--primary); margin-bottom: 16px; }
+  .conclusion p { font-size: 1.05em; margin: 10px 0; }
+  .footer { text-align: center; padding: 24px; color: #7f8c8d; font-size: 0.85em; }
+  @media (max-width: 600px) {
+    .container { padding: 16px 12px; }
+    .section { padding: 20px 16px; }
+    table { font-size: 0.82em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>做有情怀、有担当的语言学研究</h1>
+  <div class="subtitle">上海大学文学院 · 倪兰 · 国家语委语言文字研究优秀中青年学者研修班（第12期）· 厦门大学</div>
+</div>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>目录</h2>
+    <ol>
+      <li><a href="#sec1">入社会找问题</a></li>
+      <li><a href="#sec2">建中心搭平台、实验室筑基础</a></li>
+      <li><a href="#sec3">申项目聚方向：手语研究</a></li>
+      <li><a href="#sec4">手语服务的内涵与政策支持</a></li>
+      <li><a href="#sec5">智力支持</a></li>
+      <li><a href="#sec6">人才培养与社会服务</a></li>
+      <li><a href="#sec7">结语</a></li>
+    </ol>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="section" id="sec1">
+    <h2>一、入社会找问题</h2>
+
+    <p>2016年10月至2017年8月，作者赴上海市徐汇区残疾人联合会挂职副理事长。这一经历促使作者从社会现实中发现语言学研究的真问题——<strong>手语与听障人群的语言服务</strong>。</p>
+
+    <div class="info-box">
+      <strong>全国残疾人基本数据（2006年）：</strong>全国各类残疾人总数约8296万人，其中听力残疾约2004万人（24.16%），言语残疾约127万人（1.53%）。<br>
+      <strong>上海市残疾人基本数据（2016年）：</strong>上海市各类残疾人总数约45.5万人，其中听力残疾约6.14万人，言语残疾约0.35万人。
+    </div>
+
+    <h3>手语是语言吗？</h3>
+    <div class="quote-box">
+      社会上对手语存在多种误解：<br>
+      · 手语是随意的比划，是"一种图画形手势的松散聚合"（Lewis 1968）<br>
+      · 全世界的手语都是一样的<br>
+      · 手语无法表达抽象的概念<br>
+      · 手语没有句法规则<br>
+      · 手语是人造的语言<br>
+      · 手语就是身势语（gesture）<br>
+      · 手语和盲文一样，不是语言，仅仅是残障者学习语言的"拐杖"
+    </div>
+
+    <div class="info-box">
+      <strong>事实：</strong>手语是聋人的母语，是聋人的第一语言。联合国《残疾人权利公约》明确：包括口语和手语及其他形式的非语音语言，"在正式事务中允许和便利使用手语、盲文、辅助和替代性交流方式及残疾人选用的其他一切无障碍交流手段、方式和模式；承认和推动手语的使用。"
+    </div>
+
+    <h3>手语引发的一系列语言问题</h3>
+    <ol>
+      <li>听障儿童应该学习什么语言？</li>
+      <li>手语可以作为听障儿童的母语或第一语言吗？在哪里学习？谁来教？</li>
+      <li>聋人学校给听障儿童用哪一种语言授课？</li>
+      <li>融合教育中的听障儿童是否可以得到足够的语言支持？</li>
+      <li>手语是否应该有标准规范？如何制定？</li>
+      <li>手语翻译的原则是什么？</li>
+      <li>手语译员是否可以成为职业？职业认证如何操作？</li>
+      <li>手语的信息化该怎么做？</li>
+      <li>医疗、法律、应急等场景下谁来提供语言服务？</li>
+    </ol>
+
+    <h3>中国聋教育的发展</h3>
+    <div class="stage-card">
+      <div class="stage-title">1948年</div>
+      全国共有48所特殊教育学校，在校生2380人。
+    </div>
+    <div class="stage-card">
+      <div class="stage-title">1985年</div>
+      全国有375所特殊教育学校，4万名在校生。
+    </div>
+    <div class="stage-card">
+      <div class="stage-title">1991年</div>
+      全国有886所特殊教育学校，近8.5万在校生。
+    </div>
+    <div class="stage-card">
+      <div class="stage-title">1999年</div>
+      全国有1535所特殊教育学校，加上一万多个普通学校附设特殊教育班，在校生358,327人。其中聋校871所、盲聋合校163所。
+    </div>
+    <div class="stage-card">
+      <div class="stage-title">2016年</div>
+      全国有2080所特殊教育学校，近49.17万在校生。其中聋校425所，就读于各类学校的听障学生约9万人，基础教育阶段在校听障学生约8.4万人。
+    </div>
+    <div class="stage-card">
+      <div class="stage-title">2025年</div>
+      全国有2464所特殊教育学校，92.7万在校生。
+    </div>
+
+    <h4>聋教育现状综合研判</h4>
+    <table>
+      <tr><th>类别</th><th>综合研判数据/范围</th><th>主要依据与说明</th></tr>
+      <tr><td>聋校数量</td><td>约400所</td><td>传统聋校和盲聋合校约占全国特教学校总数的20%-25%</td></tr>
+      <tr><td>聋生总体规模</td><td>约10-13万人</td><td>听力残疾学生约占特教学生总数的9%-12%</td></tr>
+      <tr><td>生安置形式</td><td>约70%在普通学校随班就读</td><td>与全国特教学生安置形式保持一致</td></tr>
+      <tr><td>聋校学生数量</td><td>约3-4万人</td><td>聋生总体规模减去在普通学校随班就读的聋生</td></tr>
+      <tr><td>高等教育入学</td><td>每年约1500-2000人</td><td>听障学生约占录取残疾大学生总数的10%-15%</td></tr>
+    </table>
+
+    <h3>中国聋教育的发展历程</h3>
+    <table>
+      <tr><th>阶段</th><th>时间</th><th>特征</th></tr>
+      <tr><td>慈善救济</td><td>1949年前</td><td>民间教育为主，国家为辅</td></tr>
+      <tr><td>福利救济</td><td>1949—1966</td><td>逐步从民间教育走向国家课程教育</td></tr>
+      <tr><td>缺陷补偿</td><td>1966—1978</td><td>曲折发展中</td></tr>
+      <tr><td>缺陷补偿与能力发展并存</td><td>1978—2010</td><td>逐步建立系统课程体系，医学模式转向发展模式，出现双语教育尝试</td></tr>
+      <tr><td>融合教育</td><td>2010—至今</td><td>转向教育公平和社会参与能力</td></tr>
+    </table>
+
+    <h3>中国手语的发展历程</h3>
+    <p>新中国成立以来，国家进行了一系列手语规范化工作。中国手语规范化工作大致分为五个阶段：</p>
+    <ol>
+      <li><strong>1959年前：</strong>各地手语自我发展阶段</li>
+      <li><strong>1959-1978年：</strong>《聋哑人通用手语草图》阶段</li>
+      <li><strong>1979-1985年：</strong>《聋哑人通用手语图》阶段</li>
+      <li><strong>1985-2010年：</strong>《中国手语》阶段</li>
+      <li><strong>2010年至今：</strong>《国家通用手语》阶段</li>
+    </ol>
+
+    <h3>聋校语言教学五个阶段</h3>
+    <table>
+      <tr><th>阶段</th><th>时间</th><th>教学方法</th></tr>
+      <tr><td>第一阶段</td><td>1887-1929</td><td>强调口语教学法，根据书面文字教汉语，用赖恩手势拼打汉语语音</td></tr>
+      <tr><td>第二阶段</td><td>1930-1955</td><td>手语成为主导，由聋人老师用相对应汉语的手势教授书面汉语词汇</td></tr>
+      <tr><td>第三阶段</td><td>1956-1985</td><td>对低年级学生教授汉语口语，用手指打汉语拼音辅助口语交流，高年级用手势辅助说话</td></tr>
+      <tr><td>第四阶段</td><td>1986-1995</td><td>各地聋校采用各种不同的从口语到手口结合的教学方法</td></tr>
+      <tr><td>第五阶段</td><td>1996-2005</td><td>双语双文化聋教育方法在十所学校的学前和小学阶段得到实验</td></tr>
+    </table>
+
+    <h3>面向听障者语言服务的迫切性</h3>
+    <div class="info-box">
+      <p>语言问题是听障人群融入社会的最大障碍。如何为他们提供语言服务，使他们在社会交往中，尤其是在教育、医疗、法律事务等过程中享有平等的语言权益，是保障听障、视障人群权益、提高其整体教育水平、实现全面小康的重要举措。</p>
+      <p>为听障人群提供手语语言服务是保障他们的语言文字权益、促进其融入社会的重要举措。</p>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="section" id="sec2">
+    <h2>二、建中心搭平台、实验室筑基础</h2>
+
+    <h3>研究中心建设</h3>
+    <ul>
+      <li><strong>2017年5月：</strong>成立上海大学中国手语及聋人研究中心</li>
+      <li><strong>2020年1月：</strong>以"特殊人群语言文字研究推广"为特色获批上海市语言文字推广基地</li>
+      <li><strong>2022年10月：</strong>完成首批国家语言文字推广基地（综合研究类）中期考核</li>
+      <li>在上海大学第五轮学科评估中，中国手语及聋人研究中心为文学学科填报了标志性成果</li>
+    </ul>
+
+    <h3>语言学实验室建设</h3>
+    <p>语言学实验室是现代语言学由传统的人文学科向交叉学科发展的重要基础设施。特别是在认知科学、神经科学、人工智能等领域，实验室是重要平台。</p>
+    <p>实验室建设共投入100余万，建成了多媒体音视频采集系统等硬件设施。</p>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section" id="sec3">
+    <h2>三、申项目聚方向：手语研究</h2>
+
+    <h3>项目概况</h3>
+    <p>2003-2025年，22年来，语言学科主要的三大项目来源中，手语及聋人语言能力、语言习得相关的项目总计90项：</p>
+    <table>
+      <tr><th>项目来源</th><th>数量</th></tr>
+      <tr><td>国家社科项目</td><td>32项</td></tr>
+      <tr><td>教育部人文社科项目</td><td>33项</td></tr>
+      <tr><td>国家语委规划项目（2011年始）</td><td>25项</td></tr>
+    </table>
+
+    <h3>手语研究团队</h3>
+    <h4>手语语言学研究</h4>
+    <ul>
+      <li>上海：复旦大学、华东师范大学、上海大学、上海外国语大学、上海师范大学</li>
+      <li>北京：北京师范大学、北京联合大学</li>
+      <li>江苏：江苏师范大学、南京特殊教育师范学院、金陵科技学院</li>
+      <li>河南：河南财经政法大学、郑州工程技术学院</li>
+      <li>其他：河北燕山大学、江西豫章师范学院、浙江特殊教育职业学院</li>
+    </ul>
+    <h4>手语识别与合成技术研究</h4>
+    <ul>
+      <li>中国科学技术大学李厚强、周文罡教授团队</li>
+      <li>中国科学院陈益强教授、万军研究员团队</li>
+      <li>上海交通大学苏剑波教授团队</li>
+      <li>西安电子科技大学苗启广、张亮教授团队</li>
+      <li>天津理工大学陈胜勇、袁甜甜教授团队</li>
+      <li>上海大学方昱春教授团队</li>
+      <li>北京联合大学姚登峰教授团队</li>
+    </ul>
+
+    <h3>手语研究方向</h3>
+    <div style="display:flex; flex-wrap:wrap; gap:8px; margin: 12px 0;">
+      <span class="tag">中国手语语法研究</span>
+      <span class="tag">句法结构</span>
+      <span class="tag">语言与认知</span>
+      <span class="tag">手语语料库</span>
+      <span class="tag">特殊人群语言规划</span>
+      <span class="tag">家庭语言政策</span>
+      <span class="tag">语言教育规划</span>
+      <span class="tag">语言服务</span>
+    </div>
+
+    <h3>代表性项目（2016-2026年）</h3>
+    <table>
+      <tr><th>时间</th><th>项目来源</th><th>项目名称</th></tr>
+      <tr><td>2016</td><td>中国残疾人联合会委托</td><td>中国手语专有名词规范化研究</td></tr>
+      <tr><td>2017</td><td>教育部人文社科</td><td>基于语料库的中国手语词类研究</td></tr>
+      <tr><td>2017</td><td>国家语委委托</td><td>面向人机交互的中国手语语篇识别多源语料库建设方案设计</td></tr>
+      <tr><td>2018</td><td>上海市残联委托</td><td>国家通用手语及通用盲文规范及推广研究</td></tr>
+      <tr><td>2018</td><td>上海市哲社</td><td>上海聋儿家庭语言的社会学语言学调查</td></tr>
+      <tr><td>2019</td><td>上海市自科</td><td>多源视觉信息协同学习的手语理解研究</td></tr>
+      <tr><td>2020</td><td>国家社科基金</td><td>基于多模态语料库的中国手语否定范畴研究</td></tr>
+      <tr><td>2020</td><td>国家语委重点</td><td>新时代语言文字工作治理体系下特殊人群语言规划与语言服务研究</td></tr>
+      <tr><td>2020-2026</td><td>上海市语委</td><td>中华经典诗词手语资源库建设（一至四期）</td></tr>
+      <tr><td>2021-2026</td><td>上海市语委</td><td>国家通用手语、盲文视频课程建设及推广培训</td></tr>
+      <tr><td>2023</td><td>上海市教委</td><td>面向听障人群的应急手语服务体系建设研究</td></tr>
+      <tr><td>2026</td><td>上海市语委</td><td>上海市无障碍语言环境建设</td></tr>
+    </table>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="section" id="sec4">
+    <h2>四、手语服务的内涵与政策支持</h2>
+
+    <h3>手语服务的内涵</h3>
+    <div class="info-box">
+      <p>听力损失是全世界面临的重大公共健康问题，位居全球疾病负担排行榜前列，听障人群超过全世界人口的5%，即4亿多人患有不同程度的听力损失。据统计，全球约有7000多万听障者使用手语。</p>
+      <p>根据2006年第二次全国残疾人抽样调查数据，我国听力残疾人口达到2000多万，其中一部分听障者使用手语作为主要沟通工具，通常被称为聋人。</p>
+      <p>聋人是残疾人中较为特殊的一类，他们无法与健听人群使用有声语言进行沟通。语言障碍是他们在社会生活中遇到的最大难题。如果缺少手语服务的社会供给机制，他们往往会信息滞后，成为现代社会的语言弱势群体。</p>
+      <p><strong>为语言弱势群体的听障人群提供语言服务是国际通行做法，也是保障其语言文字权益、促进其融入社会的重要举措。</strong></p>
+    </div>
+
+    <h3>政策支持</h3>
+    <table>
+      <tr><th>政策文件</th><th>相关内容</th></tr>
+      <tr><td>《残疾人保障法》</td><td>政府有关部门应当组织和扶持盲文、手语的研究和应用</td></tr>
+      <tr><td>《残疾人教育条例》</td><td>国家鼓励开展残疾人教育的科学研究，组织和扶持盲文、手语的研究和应用，支持特殊教育教材的编写和出版</td></tr>
+      <tr><td>《"十四五"残疾人保障和发展规划》</td><td>丰富国家通用手语、盲文，加强手语翻译认证审核和注册管理，开展面向公共服务行业的国家通用手语推广</td></tr>
+      <tr><td>《第二期国家手语和盲文规范化行动计划（2021-2025年）》</td><td>加快手语和盲文规范化、标准化、信息化进程，以学校和公共服务领域为重点</td></tr>
+      <tr><td>《无障碍环境建设法》</td><td>发布涉及自然灾害、事故灾难、公共卫生事件、社会安全事件等突发事件的政府信息时，应采取语音、大字、盲文、手语等无障碍交流方式</td></tr>
+    </table>
+
+    <h3>手语服务的路径</h3>
+    <div class="info-box">
+      <strong>责任与使命：</strong>作为语言学者，关注特殊人群的语言问题是我们的责任和使命。将<strong>智力支持、人才培养和社会宣传</strong>作为进行手语服务的主要实践方式。
+    </div>
+  </div>
+
+  <!-- Section 5 -->
+  <div class="section" id="sec5">
+    <h2>五、智力支持</h2>
+
+    <h3>研究报告与政策咨询</h3>
+    <ul>
+      <li>完成国家语委推广基地综合研究类重点项目"新时代语言文字工作治理体系下特殊人群语言规划与语言服务研究"，撰写约10万字研究报告</li>
+      <li>完成国家语委"十四五"规划项目"国外应急手语服务体系研究"，撰写约7万字调研报告，获得采纳证明，优秀结项</li>
+      <li>撰写国家语委系列皮书中特殊人群语言文字相关报告，包括《中国语言生活状况报告》（绿皮书）、《中国语言文字事业发展》（白皮书）、《中国语言政策研究报告》（蓝皮书）、《上海市语言生活状况报告》</li>
+    </ul>
+
+    <h3>学术论文发表</h3>
+    <p>发表一系列相关学术论文，对特殊人群语言政策制定提供理论和数据支持。在Language Policy（SSCI和A&HCI 2区）等期刊发表关于听障家庭中的健听子女（CODA）家庭语言政策研究。</p>
+
+    <h3>手语语料库开发</h3>
+    <p>手语语料库开发，推动中国手语的量化研究。包括多源视觉信息融合、增强时空表示的多模态孤立词手语识别、时空图卷积网络连续手语识别、多尺度交叉融合网络用于姿态迁移等技术方向。</p>
+
+    <h3>中国手语识别与合成技术发展</h3>
+    <p>相关成果已应用于"手语数字人"产品，与华为等企业合作推广。</p>
+
+    <h3>教学资源建设</h3>
+    <ul>
+      <li>系列教材：《中国手语教程》（初级、中级）</li>
+      <li>国家通用盲文入门课程（智慧树网）</li>
+      <li>中国手语文化课程（智慧树网）</li>
+    </ul>
+
+    <h3>文化产品创新</h3>
+    <p>组织撰写拍摄出版《中华经典诗词（手语版）1-4级》，同期建设"中华经典资源库手语版"，入选国家语言资源平台，为特殊教育学校师生提供优质教育资源。</p>
+
+    <h3>参与各类咨询与审议工作</h3>
+    <p>参与中聋协手语委数据集工作咨询、上海市残疾人代表大会建议、手语翻译服务规范审议、手语调查方案审议等各类会议、调研、咨询、审议、培训工作。</p>
+  </div>
+
+  <!-- Section 6 -->
+  <div class="section" id="sec6">
+    <h2>六、人才培养与社会服务</h2>
+
+    <h3>人才培养</h3>
+    <p>承办上海市国家通用手语培训项目，2019年、2024年、2026年分别为近500多名特殊教育学校教师、残联工作人员、医护人员、轨交服务人员、公共服务窗口人员培训国家通用手语。</p>
+
+    <h3>应用软件开发</h3>
+    <ul>
+      <li>面向手语语言学研究的手形字库自动生成软件（CSL-handshape 2020）</li>
+      <li>面向聋人司机与乘客沟通的应用</li>
+    </ul>
+
+    <h3>社会服务</h3>
+    <ul>
+      <li><strong>城市轨道交通手语服务共建项目：</strong>与上海地铁第二运营有限公司服务品牌工作室开展"开门办地铁，同心迎进博"校企共建专题会议，启动轨道交通手语服务共建项目</li>
+      <li><strong>聋人就医手语服务：</strong>2025年1月起，上海大学手语社与仁济医院宝山分院"医"路伴您志愿服务项目合作，通过手语翻译为听障患者提供志愿服务，并为医护人员提供实用手语培训</li>
+    </ul>
+
+    <h3>合作共建单位</h3>
+    <div style="display:flex; flex-wrap:wrap; gap:6px; margin: 12px 0;">
+      <span class="tag">中通地铁集团</span>
+      <span class="tag">中国残疾人联合会</span>
+      <span class="tag">上海手声倾信息服务有限公司</span>
+      <span class="tag">中国聋人协会</span>
+      <span class="tag">上海求人工智能科技有限公司</span>
+      <span class="tag">上海市残疾人联合会</span>
+      <span class="tag">上海寂静之声文化传媒有限公司</span>
+      <span class="tag">上海聋人协会</span>
+      <span class="tag">上海市第一聋哑学校</span>
+      <span class="tag">上海市闵行启音学校</span>
+      <span class="tag">南大实验学校</span>
+      <span class="tag">仁济医院宝山分院</span>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div class="conclusion" id="sec7">
+    <h2>结语</h2>
+    <p><strong>语言学研究：</strong></p>
+    <p>观察社会，寻找真问题 → 理解语言背后的社会生活 → 以专业研究回应时代需求</p>
+    <p>服务国家发展战略 → 服务民生与社会治理 → 赋能经济社会发展</p>
+    <br>
+    <p><strong>做语言生活的观察者、思考者和建设者：</strong></p>
+    <p>从语言生活中来，到语言生活中去。</p>
+    <p>保持学科自觉，也保持跨界能力。</p>
+    <p style="font-size:1.2em; color:var(--accent);">做"有情怀的学问"。</p>
+  </div>
+
+  <div class="footer">
+    本文档由 PDF 课件 OCR 提取整理 · 上海大学文学院 倪兰 · 仅供学习参考
+  </div>
+
+</div>
+
+</body>
+</html>
