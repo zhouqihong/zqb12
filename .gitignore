@@ -1,2 +1,5 @@
 .workbuddy/
 .git/
+gen_report_v3.py
+~$*.docx
+slides_security/

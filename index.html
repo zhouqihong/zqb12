@@ -391,60 +391,76 @@
     .session.discussion .session-time .session-period { color: var(--text-muted); }
     .session.discussion .session-title { color: var(--text-muted); }
 
-    /* ===== Resource Center ===== */
+    /* ===== Resource Center (Compact) ===== */
     .resource-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
     }
     .resource-card {
         background: var(--card-bg);
-        border-radius: 12px;
-        padding: 32px;
+        border-radius: 10px;
+        padding: 18px 20px;
         box-shadow: var(--shadow);
         text-decoration: none;
         color: var(--text);
-        transition: all 0.3s;
-        border-top: 4px solid var(--accent);
+        transition: all 0.25s;
+        border-left: 3px solid var(--accent);
         display: flex;
-        flex-direction: column;
+        align-items: flex-start;
         gap: 14px;
-        position: relative;
     }
     .resource-card:hover {
-        transform: translateY(-4px);
+        transform: translateY(-2px);
         box-shadow: var(--shadow-hover);
     }
     .resource-card .res-icon {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
         background: linear-gradient(135deg, var(--primary), var(--primary-light));
         color: #fff;
-        border-radius: 12px;
+        border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+    }
+    .resource-card .res-body {
+        flex: 1;
+        min-width: 0;
     }
     .resource-card h3 {
         color: var(--primary);
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin-bottom: 4px;
+        line-height: 1.4;
     }
     .resource-card p {
         color: var(--text-light);
-        font-size: 0.95rem;
-        line-height: 1.7;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin-bottom: 6px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
     .resource-card .res-link {
-        margin-top: auto;
         color: var(--accent);
-        font-size: 0.95rem;
+        font-size: 0.85rem;
         font-weight: 500;
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        gap: 6px;
+        gap: 4px;
     }
+    @media (max-width: 900px) {
+        .resource-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+        .resource-grid { grid-template-columns: 1fr; }
+    }
+
 
     /* ===== Footer ===== */
     .footer {
@@ -553,9 +569,10 @@
                 <div class="stat-label">主讲专家</div>
             </div>
             <div class="stat-item">
-                <div class="stat-num">5</div>
+                <div class="stat-num">8</div>
                 <div class="stat-label">已上线子页</div>
             </div>
+
         </div>
     </section>
 
@@ -728,9 +745,10 @@
                     <div class="speaker-tag">北京语言大学</div>
                 </div>
                 <div class="session-action">
-                    <span class="btn btn-disabled">整理中</span>
+                    <a href="大模型时代语言安全博弈.html" class="btn btn-primary">查看学习 →</a>
                 </div>
             </div>
+
             <div class="session">
                 <div class="session-time">
                     <div class="session-period">下午</div>
@@ -748,27 +766,28 @@
                     <span class="btn btn-disabled">整理中</span>
                 </div>
             </div>
-            <div class="session discussion">
+            <div class="session">
                 <div class="session-time">
                     <div class="session-period">晚上</div>
                     <div class="session-range">19:00 — 21:00</div>
                 </div>
                 <div class="session-content">
                     <div class="session-title">分组讨论</div>
-                    <div class="session-desc">围绕当日学习内容展开研讨</div>
+                    <div class="session-desc">课程思政如何融入语言文字教学</div>
                 </div>
                 <div class="session-speaker">
                     <div class="speaker-name">—</div>
                     <div class="speaker-tag">集体活动</div>
                 </div>
                 <div class="session-action">
-                    <span class="btn btn-disabled">—</span>
+                    <a href="讨论笔记.html" class="btn btn-primary">查看笔记 →</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============ Day 4: 7月23日 ============ -->
+
     <section class="day-section" id="day4">
         <div class="day-header">
             <div class="day-title">
@@ -968,19 +987,72 @@
             <span class="section-subtitle">Resources</span>
         </div>
         <div class="resource-grid">
+            <a href="https://www.ywky.edu.cn/index.html" target="_blank" rel="noopener" class="resource-card">
+                <div class="res-icon">🏫</div>
+                <div class="res-body">
+                    <h3>国家语委</h3>
+                    <p>国家语言文字工作委员会官方网站。</p>
+                    <div class="res-link">访问官网 ↗</div>
+                </div>
+            </a>
+            <a href="https://www.chinese.cn/page/#/pcpage/mainpage" target="_blank" rel="noopener" class="resource-card">
+                <div class="res-icon">🌐</div>
+                <div class="res-body">
+                    <h3>语言交流合作中心</h3>
+                    <p>中外语言交流合作中心官方平台。</p>
+                    <div class="res-link">访问官网 ↗</div>
+                </div>
+            </a>
             <a href="学习资料汇总.html" class="resource-card">
                 <div class="res-icon">📖</div>
-                <h3>学习资料汇总</h3>
-                <p>汇集本期培训相关的核心文献、专家论文、官方报道与延伸阅读材料，按主题分类整理，支持在线阅读与 PDF 下载。</p>
-                <div class="res-link">进入资料库 →</div>
+                <div class="res-body">
+                    <h3>学习资料汇总</h3>
+                    <p>核心文献、专家论文、官方报道与延伸阅读材料。</p>
+                    <div class="res-link">进入资料库 →</div>
+                </div>
             </a>
             <a href="大语言工作格局.html" class="resource-card">
                 <div class="res-icon">🏛️</div>
-                <h3>大语言工作格局专题</h3>
-                <p>系统呈现"强国建设 语言何为"主报告核心内容，涵盖大语言工作格局的政策背景、战略设计与实施路径，是本期培训的核心学习资源。</p>
-                <div class="res-link">进入专题页 →</div>
+                <div class="res-body">
+                    <h3>大语言工作格局专题</h3>
+                    <p>"强国建设 语言何为"主报告核心内容。</p>
+                    <div class="res-link">进入专题页 →</div>
+                </div>
+            </a>
+            <a href="https://www.gov.cn/gongbao/2025/issue_11846/202502/content_7002799.html" target="_blank" rel="noopener" class="resource-card">
+                <div class="res-icon">📋</div>
+                <div class="res-body">
+                    <h3>教育强国建设规划纲要</h3>
+                    <p>2024—2035年教育强国建设纲领性文件。</p>
+                    <div class="res-link">阅读全文 ↗</div>
+                </div>
+            </a>
+            <a href="https://www.gov.cn/zhengce/zhengceku/202606/content_7073641.htm" target="_blank" rel="noopener" class="resource-card">
+                <div class="res-icon">📄</div>
+                <div class="res-body">
+                    <h3>教育发展"十五五"规划</h3>
+                    <p>"十五五"期间教育改革发展重点任务。</p>
+                    <div class="res-link">阅读全文 ↗</div>
+                </div>
+            </a>
+            <a href="https://mp.weixin.qq.com/s/n3iVBy491hRuqnhMKpZqfA" target="_blank" rel="noopener" class="resource-card">
+                <div class="res-icon">🎯</div>
+                <div class="res-body">
+                    <h3>现代汉语思政案例</h3>
+                    <p>课程思政融入现代汉语教学的实践案例。</p>
+                    <div class="res-link">查看案例 ↗</div>
+                </div>
+            </a>
+            <a href="http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/202604/W020260407554480905449.pdf" target="_blank" rel="noopener" class="resource-card">
+                <div class="res-icon">🤖</div>
+                <div class="res-body">
+                    <h3>人工智能语料库基础术语</h3>
+                    <p>教育部发布的人工智能语料库领域基础术语规范。</p>
+                    <div class="res-link">下载PDF ↗</div>
+                </div>
             </a>
         </div>
+
     </section>
 
 </div>
