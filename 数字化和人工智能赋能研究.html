@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数字化和人工智能赋能语言文字和文化研究 · 史晓东</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --primary: #1a3a5c;
+    --primary-light: #2c5f8a;
+    --primary-dark: #0f2540;
+    --accent: #c9962e;
+    --accent-light: #e0b85c;
+    --bg: #f5f3ef;
+    --card-bg: #ffffff;
+    --text: #2c2c2c;
+    --text-light: #666;
+    --text-muted: #999;
+    --border: #e0ddd6;
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+}
+.hero {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+.hero h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 12px; }
+.hero .subtitle { font-size: 1.05rem; opacity: 0.9; margin-bottom: 18px; }
+.hero .meta { font-size: 0.9rem; opacity: 0.8; }
+.back-link {
+    display: inline-block;
+    margin: 20px;
+    padding: 8px 18px;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+.back-link:hover { background: var(--primary-light); }
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+.section { background: var(--card-bg); border-radius: 12px; padding: 36px 40px; margin-bottom: 28px; box-shadow: var(--shadow); border-left: 5px solid var(--accent); }
+.section h2 { color: var(--primary); font-size: 1.55rem; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--border); }
+.section h3 { color: var(--primary-light); font-size: 1.2rem; margin: 24px 0 12px; }
+.section h4 { color: var(--text); font-size: 1.05rem; margin: 16px 0 8px; }
+.section p, .section li { color: var(--text); font-size: 1rem; line-height: 1.85; margin-bottom: 10px; }
+.section ul, .section ol { padding-left: 28px; margin-bottom: 14px; }
+.section ul li, .section ol li { margin-bottom: 6px; }
+.section blockquote {
+    border-left: 4px solid var(--accent);
+    padding: 12px 18px;
+    background: #faf8f3;
+    margin: 14px 0;
+    color: var(--text-light);
+    font-style: italic;
+}
+.highlight { color: var(--primary); font-weight: 600; }
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 14px;
+}
+.feature-card {
+    background: #faf8f3;
+    border-radius: 8px;
+    padding: 16px 20px;
+    border-left: 3px solid var(--accent);
+}
+.feature-card h4 { color: var(--primary); margin-bottom: 6px; }
+.feature-card p { font-size: 0.92rem; color: var(--text-light); margin: 0; }
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 14px;
+}
+.case-card {
+    background: linear-gradient(135deg, #f5f3ef, #e8e4d8);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+}
+.case-card .num {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.case-card h4 { color: var(--primary); font-size: 1rem; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 0.95rem;
+}
+th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+th { background: var(--primary); color: #fff; }
+tr:nth-child(even) { background: #faf8f3; }
+.footer {
+    background: var(--primary-dark);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 24px 20px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+}
+@media (max-width: 768px) {
+    .hero h1 { font-size: 1.6rem; }
+    .section { padding: 24px 20px; }
+    .card-grid, .case-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>数字化和人工智能赋能语言文字和文化研究</h1>
+    <p class="subtitle">史晓东 · 厦门大学 · 闽台非遗文化数字化保护与智能处理文化和旅游部重点实验室</p>
+    <p class="meta">语言文字优秀青年培训第12期 · 2026年7月24日上午</p>
+</section>
+
+<div style="text-align:center;">
+    <a href="index.html" class="back-link">← 返回主页</a>
+</div>
+
+<div class="container">
+
+    <div class="section">
+        <h2>报告导语</h2>
+        <p>本报告围绕"语言文字和文化研究"这一主题，从科学方法论的视角切入，阐述数字化与人工智能如何赋能语言文字与文化研究，并通过四个典型案例——<span class="highlight">计算词典学、甲骨文识别、计算音韵学、非遗数字化和智能处理</span>——展示AI4S（AI for Science）研究范式在人文社科领域的应用与实践。</p>
+    </div>
+
+    <div class="section">
+        <h2>第一部分 · 数字化和人工智能概论</h2>
+
+        <h3>一、什么是科学</h3>
+        <p>科学是以<span class="highlight">经验证据（Empirical Evidence）为基础、以逻辑推理为工具、以可检验性为判断</span>的关于客观世界各种事物的本质及运动规律的系统性知识体系。</p>
+        <ul>
+            <li><strong>可检验性与可证伪性是科学的要素</strong>：哲学家卡尔·波普尔指出，"一个理论之所以科学，不在于它能证明自己正确，而在于它能明确告诉我们'在什么情况下它会被证明错误'"。不可证伪的命题不属于科学范畴。可证伪但暂时未被证伪的理论才是科学理论，科学理论永远是"相对真理"。</li>
+            <li><strong>科学活动遵循科学方法</strong>：观察现象 → 提出假说 → 演绎预测 → 实验检验 → 修正或接受假说 → 新观察……</li>
+            <li><strong>科学发现必须能被任何具备相同条件的其他人重复验证</strong>。</li>
+        </ul>
+
+        <h3>二、语言学是一门科学</h3>
+        <p>语言学之所以被称为科学，是因为它具备科学的核心特征：客观的研究对象、系统的科学方法、可证伪的理论体系以及跨学科的验证手段。</p>
+        <ul>
+            <li>"语言学是一门科学"这一学科定位，通常归功于瑞士语言学家<span class="highlight">费尔迪南·德·索绪尔（Ferdinand de Saussure）</span>——他在1916年出版的《普通语言学教程》中，把语言定义为一个自足的符号系统，并明确了语言学的研究对象，从而将语言学从文史附庸转变为独立科学，他也被称为"现代语言学之父"。</li>
+            <li>美国语言学家和人类学家<span class="highlight">约瑟夫·格林伯格</span>认为语言学是一门先导科学（pilot science），其研究方法常被其他社会科学学科有意识地模仿与借鉴。</li>
+        </ul>
+
+        <h3>三、科学和交叉研究</h3>
+        <p>德国物理学家、诺贝尔奖获得者<span class="highlight">普朗克（1858–1947）</span>指出："科学是内在的整体，它被分解为单独的部分不是因为事物的本身，而是取决于人类认识能力的局限性。"比利时物理化学家、诺贝尔奖获得者<span class="highlight">普里高津</span>呼吁"将强调实验及定量表述的西方传统和研究整体系统的中国传统结合起来"。</p>
+        <p>很多问题，本来就需要用到多个学科的知识和模型来解决。从单一到复杂，科学和技术的多学科交叉促进了知识边界的不断演化。</p>
+
+        <h3>四、跨学科交叉研究极简史</h3>
+        <ul>
+            <li><strong>17-18世纪</strong>：数学与经典力学的结合（牛顿）</li>
+            <li><strong>19世纪</strong>：数学与电磁学的结合（麦克斯韦）</li>
+            <li><strong>20世纪</strong>：数学与相对论、量子力学（爱因斯坦、薛定谔、海森堡）</li>
+            <li><strong>20-21世纪</strong>：数学、计算机科学与人工智能与所有学科的结合</li>
+        </ul>
+        <blockquote>数学解决形式化（学科 vs. 科学）<br>计算机解决可计算性<br>人工智能解决复杂性<br>——MIT：CS相关专业学生占比42.5%！</blockquote>
+
+        <h3>五、数字化和人工智能改变了语言文字和文化研究范式</h3>
+        <ul>
+            <li>人工智能方法已经席卷了所有学科，形成了<span class="highlight">AI for Science（AI4S）</span>的研究范式，可望极大地加速科学发现。数学家Levent Alpoge表示，在AI模型Fable 5的协助下，他构造出了雅可比猜想（Jacobian Conjecture）的一个反例。这个猜想曾经坑了华人数学家张益唐7年。</li>
+            <li><strong>人工智能需要大数据，所以数字化是引入人工智能方法的前提</strong>。</li>
+            <li>数字化和人工智能对语言文字与文化研究的赋能，不仅体现在效率提升，更重要的是<span class="highlight">推动了研究范式的转变</span>：从以文献阅读和个案分析为主，发展到"海量数据、智能分析、人机协同进行知识发现"的新模式，为跨语言、跨文化、跨媒介的综合研究开辟了新的可能。</li>
+        </ul>
+
+        <h3>六、数字化和人工智能助力文化遗产保护与传播</h3>
+        <ul>
+            <li>数字化和AI不仅服务研究，也改变文化传播方式。例如：<strong>数字博物馆</strong>利用VR/AR/三维建模，实现线上参观。</li>
+            <li>AI可对文物进行数字化修复，如：破损壁画自动补全。AI也可对古籍缺字智能识别和补全。</li>
+            <li>AI可进行非遗数字传承，例如：AI可生成京剧唱腔、民歌、民族舞蹈，甚至实现交互教学。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>第二部分 · 案例一：计算词典学</h2>
+        <p>数字化催生了<span class="highlight">数字人文（Digital Humanities）</span>这一交叉领域。从传统人文走向"智慧人文"，典型研究包括：</p>
+        <div class="card-grid">
+            <div class="feature-card">
+                <h4>时间演化分析</h4>
+                <p>研究某个词1000年的变化。例如："君子"如何从政治概念变成道德概念。</p>
+            </div>
+            <div class="feature-card">
+                <h4>文本计算</h4>
+                <p>例如统计《全唐诗》几十万首诗，分析高频意象、地域变化、季节描写、情感演变等。</p>
+            </div>
+            <div class="feature-card">
+                <h4>社会网络分析</h4>
+                <p>例如建立唐代诗人交游网络，分析谁才是真正的文化传播中心。</p>
+            </div>
+            <div class="feature-card">
+                <h4>GIS空间分析</h4>
+                <p>把诗歌、碑刻、文献放到地图上，研究文化传播路线。例如：丝绸之路上的文化交流。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>第三部分 · 案例二：甲骨文识别</h2>
+        <p>甲骨文识别是数字人文与AI赋能古文字研究的典型案例。史晓东团队从2021年起持续研发<span class="highlight">甲骨文辅助考释系统</span>，面向甲骨文专家，支持四种选择方式：</p>
+        <div class="case-grid">
+            <div class="case-card"><span class="num">1</span><h4>图像模态考释</h4></div>
+            <div class="case-card"><span class="num">2</span><h4>文本模态考释</h4></div>
+            <div class="case-card"><span class="num">3</span><h4>综合考释</h4></div>
+            <div class="case-card"><span class="num">4</span><h4>综合模态</h4></div>
+        </div>
+        <p>系统返回结果按Unicode、概率排序，为专家提供最似字候选（如：祝 795D 0.4187、祉 8A3B 0.0812、龘 919C 0.0475等），极大提升甲骨文考释效率。系统还提供：</p>
+        <ul>
+            <li><strong>AI智能检索</strong>：选择甲骨片/甲骨字、智能问答</li>
+            <li><strong>甲骨片查询</strong>：拓片检索</li>
+            <li><strong>甲骨单字研究</strong>：单字识别、单字检索、拓片摹本生成、拓片重见检索</li>
+        </ul>
+        <blockquote>团队还开发了数字嘉度系统演示、闽南语翻译系统（洪青阳教授团队）、数字嘉度数据获取等多项配套工具。</blockquote>
+    </div>
+
+    <div class="section">
+        <h2>第四部分 · 案例三：计算音韵学</h2>
+        <p>计算音韵学以闽南方言为核心场景，构建大规模方言语音数据资源，支持方言保护与翻译应用。</p>
+
+        <h3>一、闽南方言人工智能语言系统（洪青阳团队）</h3>
+        <ul>
+            <li><strong>2018年</strong>，洪青阳科研团队推出"闽南方言人工智能语言系统"，这是一个听得懂闽南话、会说闽南话、也可以写的AI（人工智能）驱动的闽南话语音翻译系统，帮助许多人体会用"中国最难学方言之一"交流的乐趣和便利。</li>
+            <li><strong>2023年杭州亚运会</strong>期间，该翻译系统帮助中国移动能力中台在行业首创<strong>闽南语方言字幕技术</strong>，以闽南话方言视角带领观众跨语言、无障碍畅享精彩赛事，字幕中文准确率<span class="highlight">92%</span>，达行业领先水平。</li>
+        </ul>
+
+        <h3>二、数字嘉度数据获取（闽台地区方言语料库）</h3>
+        <p>数据来源包括：网络平台（YouTube等外网平台）以及已有的闽台地区方言语料库（如CommonVoice）。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>语种</th>
+                    <th colspan="4">闽南语</th>
+                    <th>福州语</th>
+                    <th>福清语</th>
+                    <th>莆田语</th>
+                    <th>客家语</th>
+                    <th>粤语</th>
+                </tr>
+                <tr>
+                    <th>地区</th>
+                    <th>台湾</th><th>厦门</th><th>漳州</th><th>泉州</th>
+                    <th>—</th><th>—</th><th>—</th><th>—</th><th>—</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>平行数据总时长（H）</td>
+                    <td>293</td><td>286</td><td>14</td><td>13</td>
+                    <td>13</td><td>30</td><td>12</td><td>171</td><td>819</td>
+                </tr>
+                <tr>
+                    <td>非平行数据总时长（H）</td>
+                    <td>2174</td><td>573</td><td>50</td><td>39</td>
+                    <td>205</td><td>189</td><td>152</td><td>524</td><td>1299</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size:0.9rem;color:var(--text-light);">注：平行数据指的是普通话语音，非平行数据包括其他方言。</p>
+    </div>
+
+    <div class="section">
+        <h2>第五部分 · 案例四：非遗数字化和智能处理</h2>
+
+        <h3>一、非遗概念与分类</h3>
+        <p>根据2003年联合国教科文组织（UNESCO）《保护非物质文化遗产公约》，非物质文化遗产包括以下5类：</p>
+        <ol>
+            <li>口頭傳統和表現形式，包括作為非物質文化遺產媒介的語言；</li>
+            <li>表演藝術；</li>
+            <li>社會實踐、儀式、節慶活動；</li>
+            <li>有關自然界和宇宙的知識和實踐；</li>
+            <li>傳統手工藝。</li>
+        </ol>
+
+        <h3>二、中国的非遗分类（"有点小问题"——史晓东）</h3>
+        <table>
+            <tr><th>编号</th><th>类别</th><th>编号</th><th>类别</th></tr>
+            <tr><td>Ⅰ</td><td>民间文学</td><td>Ⅱ</td><td>传统音乐</td></tr>
+            <tr><td>Ⅲ</td><td>传统舞蹈</td><td>Ⅳ</td><td>传统戏剧</td></tr>
+            <tr><td>Ⅴ</td><td>曲艺</td><td>Ⅵ</td><td>传统体育、游艺与杂技</td></tr>
+            <tr><td>Ⅶ</td><td>传统美术</td><td>Ⅷ</td><td>传统技艺</td></tr>
+            <tr><td>Ⅸ</td><td>传统医药</td><td>Ⅹ</td><td>民俗</td></tr>
+        </table>
+
+        <h3>三、福建的非遗资源</h3>
+        <p>9个项目入选联合国教科文组织非遗名录，其中<strong>南音（2009）、妈祖信俗（2009）、中国剪纸（漳浦、柘荣）（2009）、中国传统木结构营造技艺（闽南民居）（2009）、送王船——有关人与海洋可持续联系的仪式及相关实践（2020）、中国传统制茶技艺及其相关习俗（2022）</strong>共六个项目入选"人类非物质文化遗产代表作名录"。<strong>中国木拱桥传统营造技艺（2009）、中国水密隔舱福船制造技艺</strong>共两个项目（2010）入选"急需保护的非物质文化遗产名录"；《福建木偶戏后继人才培养计划》（2012）入选"优秀实践名册"。</p>
+
+        <h3>四、非遗的数字化和智能处理应该怎么做？</h3>
+        <ol>
+            <li><strong>标准化数字化采集</strong></li>
+            <li><strong>数字资产建库</strong></li>
+            <li><strong>智能处理</strong></li>
+            <li><strong>活化利用</strong></li>
+        </ol>
+
+        <h3>五、智能处理：构建非遗数字基因和知识图谱</h3>
+        <p>目标：完成数据清洗、修复、结构化、特征提取，构建非遗数字基因和知识图谱，按照不同非遗类型采用不同智能处理方法进行发展创新。</p>
+        <ol>
+            <li><strong>智能预处理</strong>：素材清洗、修复、标准化
+                <ul>
+                    <li>音视频智能修复（AI降噪、修复老旧录音杂音、修复老录像抖动、色彩还原）</li>
+                    <li>图像智能修复（老旧年画、剪纸、古籍纹样缺损补全、褪色图像色彩复原、壁画修复）</li>
+                </ul>
+            </li>
+            <li><strong>AI特征提取</strong>（最关键，实现"可检索、可计算"）
+                <ul>
+                    <li>视觉识别：分割纹样、识别造型、提取色彩谱系（苗绣、蜡染、木雕、甲马版画）；构建纹样标签库</li>
+                    <li>语音NLP处理：方言、民歌、口述史语音转文字、关键词提取、实体识别</li>
+                    <li>动作解析：动作捕捉数据训练AI，拆解舞蹈程式、武术套路、手工操作标准动作</li>
+                    <li>知识抽取：从文献、访谈中提取材料、工序、工具、民俗禁忌、传承谱系</li>
+                </ul>
+            </li>
+            <li><strong>构建非遗知识图谱</strong>（智能检索、智能叙事底层）：把提取出的实体（传承人、材料、工序、地域、民俗）建立关联网络</li>
+            <li><strong>生成式AI合规应用</strong>：如生成戏剧传承人数字人、虚拟场景复原、剧本杀、传统市集等</li>
+        </ol>
+
+        <h3>六、非遗数据库、数字基因库与知识图谱</h3>
+        <div class="card-grid">
+            <div class="feature-card">
+                <h4>1. 非遗数据库</h4>
+                <p>结构化存储非遗项目基本信息（如名录、传承人、影像资料），侧重<strong>数据管理</strong>。</p>
+            </div>
+            <div class="feature-card">
+                <h4>2. 非遗数字基因库</h4>
+                <p>提炼非遗项目的核心文化基因（如技艺流程、符号体系、传承谱系），侧重<strong>文化要素解构</strong>。</p>
+            </div>
+            <div class="feature-card">
+                <h4>3. 非遗知识图谱</h4>
+                <p>基于语义网络关联非遗实体与基因，支持推理与知识发现，侧重<strong>关系挖掘</strong>。</p>
+            </div>
+            <div class="feature-card">
+                <h4>三大库关系</h4>
+                <p>数据库⇄数字基因库（提炼文化要素）、数据库⇄知识图谱（同步更新）、基因库⇄知识图谱（语义化关联）。</p>
+            </div>
+        </div>
+
+        <h3>七、闽台建筑技艺数字化解析</h3>
+        <p>"基于GPS的景区旅游者空间行为分析——以鼓浪屿为例"荣获文旅部优秀研究成果二等奖。参与2018年中国国际太阳能十项全能竞赛并获总第三名（产学研合作成果"数字乡建+多维数据服务，赋能乡村振兴"）。参与中国第五届互联网+大学生创新创业大赛获铜奖。研究也将持续的将科研成果进行地方需求建设的转化。</p>
+        <p>代表性成果：<strong>倾斜摄影技术系统</strong>、<strong>3D实景数据建模</strong>、<strong>历史建筑信息模型（HBIM）信息系统</strong>等。</p>
+
+        <h3>八、鼓浪屿世界遗产·数字化保护活化路径</h3>
+        <p>路径：<strong>地空一体建模 + 三维激光扫描 → 实现多源数据智能识别并矢量化HBIM三维模型 → 综合历史分析与非遗技艺解析的建筑基因识别 → 构件族库识别 → 矢量化 → 文化遗产新业态（鼓浪屿元宇宙）</strong></p>
+        <p><strong>拟解决的核心技术难题</strong>：</p>
+        <ul>
+            <li>文化遗产信息留存与提取现状：基于倾斜摄影和激光扫描的融合存在较大累计误差；遗产信息的构件识别和HBIM基因库存在研究空缺；文化遗产留存活化与现代文旅消费场景不匹配。</li>
+            <li>拟解决的技术难题：结合HBIM信息模型提高对建筑遗产文化信息的识别、提取、解析和融合的技术研发；建立文化遗产要素的基因库；提高文化遗产价值挖掘和体验；基于元宇宙平台搭建提高世遗活化路径。</li>
+        </ul>
+
+        <h3>九、图像矢量化方法——刺绣图库构建及创造</h3>
+        <p>矢量图与光栅图相比的优势：与分辨率无关、易于编辑、用于Logo等高质量图像设计。可应用于<span class="highlight">刺绣、木板年画的矢量图库构建与再创造</span>。</p>
+
+        <h3>十、文旅智能数字人：助力讲好非遗故事·塑造文旅新体验</h3>
+        <ul>
+            <li>基于AI大模型与数字人技术，融合VR头显设备、精确的空间定位系统、AI路线规划、智能交互对话和AI导游讲解等功能，为游客提供个性化和智能化的文旅服务。</li>
+            <li><strong>落地成果</strong>：英雄小八路纪念馆导览数字人、厦大文博中心数字人导览、鼓浪屿导览数字人等。</li>
+        </ul>
+
+        <h3>十一、戏曲唱腔合成（歌仔戏数字化与智能表演）</h3>
+        <p>数智为台，歌仔新腔承雅韵；智能为翼，身段流转绣华章。代表性唱段合成效果：</p>
+        <ul>
+            <li>【平贵别窑·二次战鼓·薛平贵·武生·二次战鼓已催过·杂碎调】</li>
+            <li>【千古长恨·此去云南路千里·赵美玉·闺门旦·此去云南路千里·七字调】</li>
+            <li>【三请樊梨花·双脚跪落啊妻灵前·薛丁山·小生·好比万箭穿我心哪·大哭调】</li>
+        </ul>
+
+        <h3>十二、其他配套系统</h3>
+        <ul>
+            <li><strong>AI闽南语早报</strong>：福建多个景区AI闽南语播报（《早读福建》6月12日版本已上线）</li>
+            <li><strong>柔性穿戴动捕</strong>：郭诗辉——基于智能柔性穿戴的人体运动捕捉技术（"以柔性传感捕捉动态，以智能算法重塑身姿，让人体运动在数字中重获真实"）</li>
+            <li><strong>国画数字化</strong>：陈俐燕——基于AIGC的动画视频生成系统（AIGC赋能，静品动呈传妙笔；古艺新绎，开创化境续文脉）</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>总结与启示</h2>
+        <p>数字化和人工智能不仅是技术工具，更是<span class="highlight">推动人文社科研究范式变革的核心力量</span>。史晓东团队以厦门大学"闽台非遗文化数字化保护与智能处理文化和旅游部重点实验室"为依托，围绕"语言智能处理技术、闽台非遗数字化保护技术、闽台非遗智能处理技术"三大方向开展工作，产出了甲骨文辅助考释系统、闽南语翻译系统、戏曲唱腔合成、文旅智能数字人等多项代表性成果。</p>
+        <p>对语言文字研究的启示：</p>
+        <ol>
+            <li><strong>从文献阅读到数据驱动</strong>：研究者需要具备数据思维，借助AI实现"海量数据、智能分析、人机协同"的知识发现新模式。</li>
+            <li><strong>从学科分立到交叉融合</strong>：语言学与计算机科学、考古学、艺术学、民俗学的深度融合，将催生更多原创性成果。</li>
+            <li><strong>从静态记录到动态活化</strong>：让语言文字、方言、非遗在数字时代获得新的生命力，实现真正的"活态传承"。</li>
+            <li><strong>从知识生产到文明互鉴</strong>：通过数字化实现语言文字资源的全球共享，推动中华文化的国际传播。</li>
+        </ol>
+        <blockquote>"建成文化强国、人工智能+、两岸和平发展是国家三大战略。"<br>——《中共中央十四五规划及2035年远景目标纲要》《2024政府工作报告》强调"坚定文化自信、传承弘扬中华优秀传统文化、深入推进国家文化数字化战略"。</blockquote>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p>语言文字优秀青年培训第12期 · 学习资料导航</p>
+    <p>史晓东《数字化和人工智能赋能语言文字和文化研究》· 厦门大学 · 2026.7.24</p>
+</footer>
+
+</body>
+</html>
