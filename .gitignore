@@ -1,5 +1,9 @@
 .workbuddy/
 .git/
 gen_report_v3.py
+render_*.py
 ~$*.docx
 slides_security/
+slides_digital/
+slides_hanzi/
+slides_xueshu/
